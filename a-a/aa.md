@@ -8,5 +8,24 @@ Shell是在Linux/UNIX下的命令解释型语言（command-language interpreter�
 
 # 2.Shell的种类
 
+Linux Shell的种类很多，目前流行的Shell包括ash、bash、ksh、csh、zsh等，用户可以通过查看/etc/shells 文件中的内容来查看自己主机中当前有哪些种类的Shell。
+
+```
+cat /etc/shells
+# List of acceptable shells for chpass(1).
+# Ftpd will not allow users to connect who are not using
+# one of these shells.
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+```
+
+
+
+
+
 
 
