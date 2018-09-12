@@ -4,7 +4,7 @@
 * [1.Shell编程基础](a-a.md)
   * [1.1.什么是Shell](a-a/aa.md)
     * [1.1.1.什么是Shell](chapter1/shi-yao-shi-shell.md)
-    * [1.1.2.编写第一个Shell程序](a-a/113bian-xie-di-yi-ge-shell-cheng-xu.md)
+    * [1.1.2.编写第一个Shell程序](chapter1/113bian-xie-di-yi-ge-shell-cheng-xu.md)
   * [1.2.变量](a-a/bian-liang.md)
     * [1.2.1. 什么是变量](a-a/shi-yao-shi-bian-liang.md)
     * [1.2.2.变量4种赋值方式](a-a/bian-liang-4-zhong-fu-zhi-fang-shi.md)
