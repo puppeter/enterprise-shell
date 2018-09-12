@@ -1,4 +1,8 @@
 # 为什么写这本书
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+存放配置信息，在下一章中所讲的配置信息都是在这个文件里定义的，关于该文件的配置可以看
+
+[配置](https://gitbook.zhangjikai.com/settings.html)
+
+这个章节。
 
