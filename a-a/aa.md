@@ -33,8 +33,3 @@ cat /etc/shells
 * zch：是Linux 最大的Shell之一，由Paul Falstad完成，共有84 个内部命令。如果只是一般的用途，没有必要安装这样的Shell。
 
 目前互联网公司主流操作系统是CentOS，他默认的Shell就是Bash,所以我们以介绍Bash为主如果期间谈到其他Shell会以注释方式提示读者。
-
-
-
-
-
