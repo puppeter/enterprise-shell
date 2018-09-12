@@ -12,7 +12,7 @@
     * [1.2.4.变量的类型](a-a/bian-liang-de-lei-xing.md)
     * [1.2.5.特殊变量](a-a/te-shu-bian-liang.md)
   * [1.3.Shell符号相关](1.4.1 什么是变量)
-  * 1.4.内建命令与外部命令
+  * [1.4.内建命令与外部命令](a-a/14nei-jian-ming-ling-yu-wai-bu-ming-ling.md)
 * [2.Shell条件语句](2shelltiao-jian-yu-ju.md)
 * 3.Shell 循环 && 分支语句
 
