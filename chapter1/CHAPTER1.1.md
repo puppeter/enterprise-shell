@@ -1,5 +1,4 @@
-#
-1.什么是Shell?
+#1.什么是Shell?
 
 Shell是在Linux/UNIX下的命令解释型语言（command-language interpreter），它的中文翻译为“壳”，顾名思义主要是用于人机交互是人和机器间的接口，以下截图为macOS中的Shell。
 
