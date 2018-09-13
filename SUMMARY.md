@@ -4,7 +4,7 @@
 * 1.Shell编程基础
   * [1.1.什么是Shell]
     * [1.1.1.什么是Shell](chapter1/CHAPTER1.1.md)
-    * [1.1.2.编写第一个Shell程序]
+    * [1.1.2.编写第一个Shell程序](chapter1/CHAPTER1.2.md)
   * [1.2.变量]
     * 1.2.1. 什么是变量
     * 1.2.2.变量4种赋值方式
