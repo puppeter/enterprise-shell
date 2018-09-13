@@ -3,11 +3,11 @@
 * [Introduction](README.md)
 * 1.Shell编程基础
   * [1.1.什么是Shell]
-    * [1.1.1.什么是Shell](chapter1.1/CHAPTER1.1.md)
-    * [1.1.2.编写第一个Shell程序](chapter1.1/CHAPTER1.2.md)
+    * [1.1.1.什么是Shell](chapter1.1/CHAPTER1.md)
+    * [1.1.2.编写第一个Shell程序](chapter1.1/CHAPTER2.md)
   * [1.2.变量]
-    * 1.2.1. 什么是变量
-    * 1.2.2.变量4种赋值方式
+    * 1.2.1. 什么是变量(chapter1.2/CHAPTER1.md)
+    * 1.2.2.变量4种赋值方式(chapter1.2/CHAPTER2.md)
     * 1.2.3.指定变量类型 && 删除变量
     * 1.2.4.变量的类型
     * 1.2.5.特殊变量
