@@ -1,4 +1,4 @@
-#、1.编写第一个Shell脚本程序
+#1.编写第一个Shell脚本程序
 
 这里我们来编写一个Shell程序，以在屏幕打印出hello world为例（hello world的起源[http://blog.puppeter.com/read.php?25](http://blog.puppeter.com/read.php?25)），vim编辑hello.sh内容如下。
 
