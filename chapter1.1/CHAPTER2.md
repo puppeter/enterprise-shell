@@ -41,7 +41,6 @@ author：djangowang
 time: 2018098
 filename: hi.sh
 COMMENT
-echo "hi"
 ```
 
 或更简单的方式。
