@@ -50,5 +50,11 @@ declare -r var1    # 设置一个只读变量
 ```
 
 ##6.unset
-
+unset用于删除变量。他有两个参数-f（仅删除函数）-v(仅删除变量)默认值。 
+```
+foo="hello world"
+echo $foo
+unset foo
+echo $foo
+```
 
