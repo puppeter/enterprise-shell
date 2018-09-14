@@ -14,6 +14,6 @@
   * 1.3.Shell符号相关
     * [1.3.1.Shell符号相关](chapter1.3/CHAPTER1.md)
   * 1.4.内建命令与外部命令
-* 2.Shell条件语句
+* [2.Shell条件语句](2shelltiao-jian-yu-ju.md)
 * 3.Shell 循环 && 分支语句
 
