@@ -44,9 +44,15 @@ echo "第四个元素为: ${array[3]}"
 
 
 ##5.只读变量
-declare -r var1与readonly var1作用相同。这大致和C的const限定词相同。一个试图改变只读变量值的操作将会引起错误信息而失败。
+declare -r var1与readonly var1作用相同。当设置只读变量后，变量内容不可以修改。
 ```
 declare -r var1    # 设置一个只读变量
+```
+案例。
+```
+myUrl="http://blog.puppeter.com/"
+readonly myUrl
+myUrl="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh: NAME: This variable is read only.”
 ```
 
 ##6.unset
