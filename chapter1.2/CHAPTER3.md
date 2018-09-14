@@ -2,6 +2,7 @@
 ##1.字符串型
 Bash中的默认数据类型。
 ```
+#!/bin/bash
 string="hi my name is djangowang"   
 echo $string
 ```
@@ -13,6 +14,7 @@ declare -i number    # 定义一个数值型
 ```
 我们来对比一下字符串型与数字型。
 ```
+#!/bin/bash
 # 字符串
 n=6/3
 echo "n = $n"    # n = 6/3
@@ -31,6 +33,7 @@ declare -a array    #
 ```
 数组案例。
 ```
+#!/bin/bash
 declare -a array
 array=(A B "C" D)
 echo "第一个元素为: ${array[0]}"
@@ -42,6 +45,7 @@ echo "第四个元素为: ${array[3]}"
 ##4.显示函数
 declare -f 显示函数
 ```
+#!/bin/bash
 function a(){
     echo "test1"
 }
@@ -56,6 +60,7 @@ declare -f a    # 限制指定函数
 ##5.设置环境变量
 declare -x指定的变量会成为环境变量，可供shell以外的程序来使用。
 ```
+#!/bin/bash
 declare -x STRING="hello world"    # 定义一个string的环境变量,建议环境变量为大写
 export -p    # 列出所有的shell赋予程序的环境变量
 ```
@@ -67,6 +72,7 @@ declare -r var1    # 设置一个只读变量
 ```
 案例。
 ```
+#!/bin/bash
 myUrl="http://blog.puppeter.com/"
 readonly myUrl
 myUrl="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh: NAME: This variable is read only.”
@@ -75,6 +81,7 @@ myUrl="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh:
 ##6.unset变量
 unset用于删除变量。他有两个参数-f（仅删除函数）-v(仅删除变量)默认值。 
 ```
+#!/bin/bash
 foo="hello world"
 echo $foo    # 输出hello world
 unset foo    # 删除foo变量
