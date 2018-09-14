@@ -39,12 +39,29 @@ echo "第三个元素为: ${array[2]}"
 echo "第四个元素为: ${array[3]}"
 
 ```
-##4.函数
+##4.显示函数
+declare -f 显示函数
+```
+function a(){
+    echo "test1"
+}
 
+function b(){
+    echo "test1"
+}
+declare -f    # 显示以上函数
+declare -f a    # 限制指定函数
+```
 
+##5.设置环境变量
+declare -x指定的变量会成为环境变量，可供shell以外的程序来使用。
+```
+declare -x STRING="hello world"    # 定义一个string的环境变量,建议环境变量为大写
+export -p    # 列出所有的shell赋予程序的环境变量
+```
 
-##5.只读变量
-declare -r var1与readonly var1作用相同。当设置只读变量后，变量内容不可以修改。
+##6.只读变量
+declare -r var1与readonly var1作用相同。当设置只读变量后，变量内容不可以修改
 ```
 declare -r var1    # 设置一个只读变量
 ```
@@ -55,12 +72,12 @@ readonly myUrl
 myUrl="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh: NAME: This variable is read only.”
 ```
 
-##6.unset
+##6.unset变量
 unset用于删除变量。他有两个参数-f（仅删除函数）-v(仅删除变量)默认值。 
 ```
 foo="hello world"
-echo $foo
-unset foo
-echo $foo
+echo $foo    # 输出hello world
+unset foo    # 删除foo变量
+echo $foo    # 为空
 ```
 
