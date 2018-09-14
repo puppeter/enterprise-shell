@@ -42,7 +42,6 @@ time: 2018098
 filename: hi.sh
 COMMENT
 ```
-
 或更简单的方式。
 
 ```
