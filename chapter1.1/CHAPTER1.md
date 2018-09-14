@@ -1,6 +1,6 @@
 #1.什么是Shell?
 
-Shell是在Linux/UNIX下的命令解释型语言（command-language interpreter），它的中文翻译为“壳”，顾名思义主要是用于人机交互是人和机器间的接口，以下截图为macOS中的Shell。
+Shell是在Linux/UNIX下的命令解释型语言（command-language interpreter），它的中文翻译为“壳”，主要是用于人机交互，以下截图为macOS中的Bash。
 
 ![](/assets/WX20180912-120240.png)
 
@@ -32,4 +32,4 @@ cat /etc/shells
 * KornShell\(ksh\)：是AT&T Bell实验室的David Korn开发的，共有42 条内部命令，它集合了C Shell和Bourne Shell的优点，并且与Bourne Shell向下完全兼容。Korn Shell的效率很高，其命令交互界面和编程交互界面都很好。
 * zch：是Linux 最大的Shell之一，由Paul Falstad完成，共有84 个内部命令。如果只是一般的用途，没有必要安装这样的Shell。
 
-目前互联网公司主流操作系统是CentOS，他默认的Shell就是Bash所以我们课程以介绍Bash Shell为主如果期间谈到其他Shell会以注释方式提示读者。
+目前互联网公司主流操作系统是CentOS，他默认的Shell就是Bash所以我们课程以介绍Bash为主如果期间谈到其他Shell会以注释方式提示读者。
