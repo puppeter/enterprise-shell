@@ -44,13 +44,11 @@ echo "第四个元素为: ${array[3]}"
 
 
 ##5.只读变量
+declare -r var1与readonly var1作用相同。这大致和C的const限定词相同。一个试图改变只读变量值的操作将会引起错误信息而失败。
 ```
 declare -r var1    # 设置一个只读变量
 ```
 
 ##6.unset
 
-declare -r var1
-declare -i number
-declare -f 函数 
-declare -a 数组
+
