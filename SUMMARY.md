@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * 1.Shell编程基础
-  * [1.1.什么是Shell](11shi-yao-shi-shell.md)
+  * 1.1.什么是Shell
     * [1.1.1.什么是Shell](chapter1.1/CHAPTER1.md)
     * [1.1.2.编写第一个Shell程序](chapter1.1/CHAPTER2.md)
   * 1.2.变量
@@ -11,8 +11,8 @@
     * [1.2.3.指定变量类型](chapter1.2/CHAPTER3.md)
     * [1.2.4.变量的类型](chapter1.2/CHAPTER4.md)
     * [1.2.5.特殊变量](chapter1.2/CHAPTER5.md)
-  * [1.3.Shell符号相关](13shellfu-hao-xiang-guan.md)
-    * [1.3.1.Shell符号相关](13shellfu-hao-xiang-guan/131.md)
+  * 1.3.Shell符号相关
+    * [1.3.1.Shell符号相关](chapter1.3/CHAPTER1.md)
   * 1.4.内建命令与外部命令
 * 2.Shell条件语句
 * 3.Shell 循环 && 分支语句
