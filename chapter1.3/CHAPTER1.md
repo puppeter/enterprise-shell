@@ -42,7 +42,7 @@
 
   ```
   #!/bin/bash
-  echo "hello\tworld"    # 双引号，打印结果为hello    world ，双引号会解析内部的特殊符号，\t见表1的含义
+  echo "hello\tworld"    # 双引号，打印结果为hello    world ，双引号会解析内部的特殊符号。
   echo 'hello\tworld'    # 单引号，打印结果为hello\tworld，不转义\t特殊符号
   ```
   
@@ -51,6 +51,43 @@
 #!/bin/bash
 echo "hello\tworld\\n"    # 最终打印结果为hello    world\n
 ```
+
+
+
+## 4.小括号()与 大括号{}
+
+()和{}都是对一串的命令进行执行，但有所区别：
+
+* ()只是对一串命令重新开一个子shell进行执行 
+* {}对一串命令在当前shell执行,
+
+案例1，在Linux和Shell中可以通过{}把一组命令一起执行，不过这里有两种方式在大括号中执行系统命令，分别用,和..进行分割。譬如我要创建a.txt、b.txt和c.txt文本文件。
+```
+touch {a,b,c}.txt    # 用,进行分割方式
+touch {a..c}.txt    # 用..进行分割方式
+```
+案例2，在Linux和Shell中可以通过{}把一组命令一起执行，不过这里有两种方式在大括号中执行系统命令，分别用,和..进行分割。譬如我要创建a.txt、b.txt和c.txt文本文件。
+```
+(ls && touch {a..f} && ls )    # 将多个命令放到（）中，用子Shell方式运行。 && 表示前一个命令执行成功的情况下再执行后一个命令
+```
+
+
+
+## 5.大括号${} 
+${}可以存放变量与"$"符号的变量相比，他主要用于避免变量的混淆，譬如以下案例。
+```
+#!/bin/bash
+string="hello"
+echo $string_aaa    # 不加${}情况，输出为空
+echo ${string}_aaa    # 加${}情况，输出为hello_aaa
+```
+
+
+
+
+
+
+## echo 与特殊字符
 
 特殊符号对照表，表1。
 
@@ -62,6 +99,4 @@ echo "hello\tworld\\n"    # 最终打印结果为hello    world\n
 | \v | 垂直的制表符 |
 | \b | 后退符 |
 | \a | 警告（蜂鸣或是闪动） |
-
-
 
