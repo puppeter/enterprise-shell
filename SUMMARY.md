@@ -15,7 +15,7 @@
     * [1.3.1.Shell符号相关](chapter1.3/CHAPTER1.md)
     * [1.3.2.echo  && 特殊符号](chapter1.3/CHAPTER3.md)
     * [1.3.3.数学运算\(\(\)\)](chapter1.3/CHAPTER2.md)
-  * [1.4.内建命令与外部命令](14nei-jian-ming-ling-yu-wai-bu-ming-ling.md)
-* [\[2.Shell条件语句\]](2shelltiao-jian-yu-53e55d.md)
+  * [1.4.内建命令与外部命令]
+* [2.Shell条件语句]
 * 3.Shell 循环 && 分支语句
 
