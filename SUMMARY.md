@@ -18,7 +18,12 @@
   * 1.4.内建命令与外部命令
     * [1.3.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
 * 2.Bash条件语句
+  * 2.1.条件语句  
     * [2.1.1.if..then](chapter2.1/CHAPTER1.md)
     * [2.1.2.if..else](chapter2.1/CHAPTER2.md)
+  * 2.2.文件测试符
+  * 2.3.比较符
+
+  
 * 3.Shell 循环 && 分支语句
 
