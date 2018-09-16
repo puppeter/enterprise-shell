@@ -1,9 +1,9 @@
-#1.编写第一个Shell脚本程序
+#1.编写第一个Bash脚本程序
 
 这里我们来编写一个Bash程序，以在屏幕打印出hello world为例（hello world的起源[http://blog.puppeter.com/read.php?25](http://blog.puppeter.com/read.php?25)），VIM编辑hello.sh内容如下。
 
 ```
-#! /bin/bash shell的命令解释器
+#! /bin/bash Bash的命令解释器
 # author:djangowang 标识脚本作者的名字
 # time : 20180911 标识脚本开发的时间
 # filename: hello.sh 标识脚本的名字
@@ -19,9 +19,9 @@ echo "hello wolrd" #调用系统命令打印结果。
 
 最终都会在屏幕中打印出hello world。
 
-# 2.Shell的注释功能
+# 2.Bash的注释功能
 
-Shell的注释分为两种分别为：
+在Bash中我们经常能看到“#”是注释的意思，Bash的注释分为两种分别为：
 
 * 单行注释，以“\#”号表示。
 
