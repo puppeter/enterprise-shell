@@ -65,6 +65,7 @@ echo "hello\tworld\\n"    # 最终打印结果为hello    world\n
 ```
 touch {a,b,c}.txt    # 用,进行分割方式
 touch {a..c}.txt    # 用..进行分割方式
+touch {ex{1..3},ex4}    # ，和..两种方式
 ```
 
 案例2，在Bash通过\(\)以子Shell进程方式来执行命令组。
