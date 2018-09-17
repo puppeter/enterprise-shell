@@ -14,8 +14,8 @@
 #!/bin/bash
 function Hello()
 {
-        local text="Hello World!!!"    #定义局部变量
-        echo $text
+    local text="Hello World!!!"    # 定义局部变量
+    echo $text
 }
 
 Hello
