@@ -11,3 +11,15 @@ test is a shell builtin    # 内建命令
 test -f /etc/passwd   && echo true    # 结果为true
 [ -f /etc/passwd ] && echo  ture     # 结果为true
 ```
+[]和[[]]符号。
+```
+[ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错
+[[ 10 -gt 20 && 3 -eq 3 ]]&&echo y||echo n    # 正常执行
+```
+两个符号相比：
+* 1.[[]]更通用一些，[]在bash下有效
+* 2.[]为Shell命令，所以比较操作符">" 与"<"必须转义否则就变成IO改向操作符。在[[中"<"与">"不需转义，案例如下
+```
+if [[ "$a" < "$b" ]]
+if [ "$a" \< "$b" ]
+```
