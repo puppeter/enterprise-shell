@@ -1,14 +1,14 @@
-## 1.文件测试符
+f## 1.文件测试符
 文件测试符主要用于检测Linux/UNIX中的文件属性，以下是一些常见的文件测试符：
 * -f:测试其是否为普通文件，即使用ls -l命令查看时，文件类型显示为-的文件；
 * -d:测试其是否为目录文件，即使用ls -l命令查看时，文件类型显示为d的文件；
 * -e:测试文件是否存在，不论是目录还是文件，如果存在则为真，否则为假；
-* -r：测试文件对当前访问者来说（非创建者）是否可读；
-* -w：测试文件对当前访问者来说（非创建者）是否可写；
-* -x：测试文件对当前访问者来说（非创建者）是否可执行；
+* -r:测试文件对当前访问者来说（非创建者）是否可读；
+* -w:测试文件对当前访问者来说（非创建者）是否可写；
+* -x:测试文件对当前访问者来说（非创建者）是否可执行；
 * -s:测试文件是否有大小是否为0，如果不为0结果为真，否则为假；
 * -l:测试文件是否为链接文件
-* \! 取反
+
 
 文件测试符案例。
 ```
@@ -46,14 +46,59 @@ if [ -l /var/log/messages ];then    # 测试是否为链接文件
     echo "it's symbolic file"
 fi
 
+[ ! -d /etc/djangowang ] && mkdir /etc/djangowang    # 如果目录不存在，就创建一个目录
+```
+
+##2. 字符串判断、与、或和非
+在编写Bash程序过程中我们经常会用到判断字符串是否为空，这里可以通过-z和-n来直接判断。
+* -z:字符串为null，即长度为0
+* -n:字符串不为null，即长度不为0
+
+案例：
+```
+# 判断字符串不为空
+#!/bin/bash
+string="hello world"
+if [ -n "$string" ];then
+    echo "true"
+fi
+
+# 判断字符串为空
+#!/bin/bash
+string=""
+if [ -z "$string" ];then
+    echo "true"
+fi
+
+# 判断字符串为空
+#!/bin/bash
+string=""
+if [ x"$string" == "x" ];then
+    echo "true"
+fi
+```
+Bash中的与、或和非。
+* -a 与
+* -o 或
+* \! 非
+
+案例：
+```
 if [ ! -d /etc/passwd ];then    # 如果这不是一个目录结果为真
     echo "it's not  dirctory"
 fi
 
-[ ! -d /etc/djangowang ] && mkdir /etc/djangowang    # 如果目录不存在，就创建一个目录
+if [ -e /var/log/messages -a -r /var/log/messages  ];then    # 如果文件存在同时又可读的情况下，表达式为真
+    echo "true"
+fi
+
+if [ ! -e /etc/passwd -o -w /etc/passwd ];then    # 如果文件不存在或者文件有写权限的情况下，表达式为真
+    echo "true"
+fi
+
 ```
 
-##2.特殊符号的应用
+##3.特殊符号的应用
 当我们在使用if..else时表达式为真的情况程序不做任何事，这里可以通过":"来做相占位符号否则程序会报错，当表达式为假的情况时打印信息，案例如下。
 ```
 #!/bin/bash

@@ -19,7 +19,7 @@
     * [1.3.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
 * 2.Bash条件语句
   * [2.1.条件语句](chapter2.1/CHAPTER1.md)
-  * [2.2.文件测试符](chapter2.1/CHAPTER2.md))
-  * [2.3.文件比较符](chapter2.1/CHAPTER3.md)
+  * [2.2.文件测试符](chapter2.1/CHAPTER2.md)
+  * [2.3.\[\]与\[\[\]\]符号](chapter2.1/CHAPTER3.md)
 * 3.Shell 循环 && 分支语句
 
