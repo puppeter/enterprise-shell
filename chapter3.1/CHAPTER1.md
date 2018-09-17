@@ -7,12 +7,16 @@ if..then的语法：
 if [ 条件语句 ]；then    # 推荐书写方式
     执行内容
 fi
+
 # 或
+
 if [ 条件语句 ]
 then
     执行内容
 fi
+
 # 或
+
 if (());then
     执行内容
 fi
