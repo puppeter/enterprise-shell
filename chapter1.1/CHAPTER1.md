@@ -4,7 +4,12 @@ Shell是在Linux/UNIX下的命令解释型语言（command-language interpreter�
 
 ![](/assets/WX20180912-120240.png)
 
-我们再来看一下以Shell在Linux系统中的一个位置，可以看到它在用户和操作系统的中间层起到承上启下的作用。![](/assets/2.png)
+我们再来看一下Shell在Linux系统中的一个位置。从技术的角度来说Shell是一个使用者与系统的交互界面(interface), 只能让使用者通过命令行(command line)来使用系统来完成工作。 因此，Shell最简单的定义就是----命令解释器( Command Interpreter):
+
+* 将使用者的命令翻译给kernel来处理；
+* 同时，将kernel的处理结果翻译给使用者。
+
+![](/assets/2.png)
 
 # 2.Shell的种类
 
