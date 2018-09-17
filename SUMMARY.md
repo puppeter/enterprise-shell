@@ -22,7 +22,7 @@
   * [2.2.文件测试符](chapter2.1/CHAPTER2.md)
   * [2.3.\[\]与\[\[\]\]符号](chapter2.1/CHAPTER3.md)
 * 3.Bash循环 && 分支语句
-  * [3.1.循环语句](31xun-huan-yu-ju.md)
+  * 3.1.循环语句
     * [3.1.1. while](chapter3.1/CHAPTER1.md)
     * [3.1.2. for](chapter3.1/CHAPTER2.md)
     * [3.1.3. foreach](chapter3.1/CHAPTER3.md)
