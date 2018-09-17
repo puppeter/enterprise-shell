@@ -11,7 +11,7 @@
     * [1.2.3.指定变量类型](chapter1.2/CHAPTER3.md)
     * [1.2.4.变量的类型](chapter1.2/CHAPTER4.md)
     * [1.2.5.特殊变量](chapter1.2/CHAPTER5.md)
-  * 1.3.Bash符号相关\]
+  * 1.3.Bash符号相关
     * [1.3.1.Bash符号相关](chapter1.3/CHAPTER1.md)
     * [1.3.2.echo  && 特殊符号](chapter1.3/CHAPTER3.md)
     * [1.3.3.数学运算符号](chapter1.3/CHAPTER2.md)
@@ -19,7 +19,7 @@
     * [1.3.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
 * 2.Bash条件语句
   * [2.1.条件语句](chapter2.1/CHAPTER1.md)
-  * [2.2.文件测试符](chapter2.1/23bi-jiao-fu.md)
-  * [2.3.文件比较符](chapter2.1/22wen-jian-ce-shi-fu.md)
+  * [2.2.文件测试符](chapter2.1/CHAPTER2.md))
+  * [2.3.文件比较符](chapter2.1/CHAPTER3.md)
 * 3.Shell 循环 && 分支语句
 
