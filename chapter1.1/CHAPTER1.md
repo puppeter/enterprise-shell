@@ -32,4 +32,8 @@ cat /etc/shells
 * KornShell\(ksh\)：是AT&T Bell实验室的David Korn开发的，共有42 条内部命令，它集合了C Shell和Bourne Shell的优点，并且与Bourne Shell向下完全兼容。Korn Shell的效率很高，其命令交互界面和编程交互界面都很好。
 * zch：是Linux 最大的Shell之一，由Paul Falstad完成，共有84 个内部命令。如果只是一般的用途，没有必要安装这样的Shell。
 
-目前互联网公司主流操作系统是CentOS，他默认的Shell就是Bash所以我们课程以介绍Bash为主如果期间谈到其他Shell会以注释方式提示读者。
+大部分的Linux操作系统的预设Shell都是bash，其原因大致如下两种：
+* 自由软件
+* 功能强大 Bash是gnu project最成功的产品之一，自推出以来深受广大Linux/UNIX用户的喜爱， 且也逐渐成为不少组织的系统标准。
+
+而目前互联网公司主流操作系统是CentOS，他默认的Shell就是Bash所以我们课程以介绍Bash为主，如果期间谈到其他Shell会以注释方式提示读者。
