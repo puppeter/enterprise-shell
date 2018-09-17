@@ -28,15 +28,15 @@ echo "hello wolrd" #调用系统命令打印结果。
 ```
 #!/bin/bash
 # 单行注释
-echo "please input your name" # 请你输入账号
-echo "please input your password" # 请你输入密码
+echo "please input your name"    # 请你输入账号
+echo "please input your password"    # 请你输入密码
 ```
 
 * 多行注释，固定语法格式。
 
 ```
 #!/bin/bash
-<<'COMMENT'
+<<COMMENT
 author：djangowang
 time: 2018098
 filename: hi.sh
