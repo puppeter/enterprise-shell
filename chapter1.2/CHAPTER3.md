@@ -1,4 +1,5 @@
 在Bash中默认为字符串类型，其他类型我们可以通过declare来定义。
+
 ##1.字符串型
 Bash中的默认数据类型。
 ```
@@ -28,8 +29,7 @@ echo "n = $n"    # n = 2
 ##3.数组
 数组中可以存放多个值。Bash只支持一维数组，不支持多维数组，初始化时不需要定义数组大小，与大部分编程语言类似数组元素的下标由0开始。
 ```
-declare -a array    #
-
+declare -a array
 ```
 数组案例。
 ```
@@ -58,7 +58,7 @@ declare -f a    # 限制指定函数
 ```
 
 ##5.设置环境变量
-declare -x指定的变量会成为环境变量，可供shell以外的程序来使用。
+declare -x指定的变量会成为环境变量，可供Shell以外的程序来使用。
 ```
 #!/bin/bash
 declare -x STRING="hello world"    # 定义一个string的环境变量,建议环境变量为大写
@@ -74,7 +74,7 @@ declare -r var1    # 设置一个只读变量
 ```
 #!/bin/bash
 myUrl="http://blog.puppeter.com/"
-readonly myUrl
+declare -r myUrl    # 或readonly myUrl变量
 myUrl="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh: NAME: This variable is read only.”
 ```
 

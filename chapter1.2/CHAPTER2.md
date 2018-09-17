@@ -21,13 +21,15 @@ echo $name
 #!/bin/bash
 command = `ls`    # 推荐赋值方式 ,其中“`” 是键盘按键1边上的符号。 
 echo $command
-或者
+
+# 或
+
 command = $(ls)  
 echo $command
 ```
 
 ##4.位置参数赋值
-位置参数赋值是通过通过执行脚本时传递参数赋值给变量。譬如以下脚本名为test.sh内容如下，通过执行/bin/sh test.sh hello,其中hello就是位置参数他会通过$1赋值给command,这里注意如果位置变量有空格又需要同时传给位置变量1可以通过“”来扩起来，譬如/bin/sh test.sh "hello world"。这里位置变量通过空格作为变量的分割符。
+位置参数赋值是通过通过执行脚本时传递参数赋值给变量。譬如以下脚本名为test.sh内容如下，通过执行/bin/sh test.sh hello,其中hello就是位置参数他会通过$1赋值给command变量,这里注意如果位置变量有空格又需要同时传给位置变量1可以通过“”来扩起来，譬如/bin/sh test.sh "hello world"。这里位置变量通过空格作为变量的分割符。
 ```
 #!/bin/bash
 command = $1
