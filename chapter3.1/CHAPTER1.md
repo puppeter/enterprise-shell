@@ -29,8 +29,7 @@ done
 
 ## 2.while循环案例
 
-1.打印1-100的数。
-
+1.打印1-100的数字。
 ```
 #!/bin/bash
 i=1
@@ -55,7 +54,6 @@ done
 ```
 
 3.打印/etc/passwd信息。
-
 ```
 #!/bin/bash    
 while read line    # 推荐
@@ -88,5 +86,23 @@ done
 ```
 
 ## 3.while循环中赋值的陷阱
-
-
+是否遇到过while循环内赋值的变量，在循环体外获取不到值得情况？下文案例来自http://www.cnblogs.com/f-ck-need-u/p/7431578.html。
+while循环外获取不到值得情况。
+```
+#!/bin/bash
+echo "abc xyz" | while read line
+do
+    new_var=$line
+done
+echo new_var is null: $new_var?    # 打印结果new_var is null:? ,new_var变量为空
+```
+while循环外可以获取到值。
+```
+#!/bin/bash
+while read line
+do
+    new_var=$line
+done <<< "abc xyz"
+echo new_var is null: $new_var?    # 打印结果new_var is null:abc xyz? ,new_var变量为abc xyz
+```
+原因：因为使用到了“|”管道，所以while语句在子Shell中执行，这意味着while语句内部设置的变量、数组、函数等在循环外部都不再生效。“<<<”以这种方式直接在命令之前分配的变量仅对命令进程生效。
