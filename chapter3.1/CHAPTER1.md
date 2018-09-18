@@ -27,7 +27,7 @@ while command;do
 done
 ```
 
-## 2.while案例
+## 2.while循环案例
 
 1.打印1-100的数。
 
@@ -87,5 +87,6 @@ while : ;done
 done
 ```
 
+## 3.while循环中赋值的问题
 
 
