@@ -87,6 +87,6 @@ while : ;done
 done
 ```
 
-## 3.while循环中赋值的问题
+## 3.while循环中赋值的陷阱
 
 
