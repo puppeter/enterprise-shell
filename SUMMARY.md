@@ -21,6 +21,7 @@
   * [2.1.条件语句](chapter2.1/CHAPTER1.md)
   * [2.2.文件测试符](chapter2.1/CHAPTER2.md)
   * [2.3.\[\]与\[\[\]\]符号](chapter2.1/CHAPTER3.md)
+  * [2.4.案例](chapter2.1/CHAPTER4.md)
 * 3.Bash循环 && 分支语句
   * 3.1.循环语句
     * [3.1.1. while循环语句](chapter3.1/CHAPTER1.md)
