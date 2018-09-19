@@ -11,12 +11,14 @@
     * [1.2.3.指定变量类型](chapter1.2/CHAPTER3.md)
     * [1.2.4.变量的类型](chapter1.2/CHAPTER4.md)
     * [1.2.5.特殊变量](chapter1.2/CHAPTER5.md)
-  * [1.3.Bash符号相关](13bashfu-hao-xiang-guan.md)
+  * 1.3.Bash符号相关
     * [1.3.1.Bash符号相关](chapter1.3/CHAPTER1.md)
     * [1.3.2.echo  && printf](chapter1.3/CHAPTER3.md)
     * [1.3.3.数学运算符号](chapter1.3/CHAPTER2.md)
   * 1.4.内建命令与外部命令
-    * [1.3.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
+    * [1.4.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
+  * 1.5.read命令
+    * [1.5.1.read命令](chapter1.5/CHAPTER1.md)
 * 2.Bash条件语句
   * [2.1.条件语句](chapter2.1/CHAPTER1.md)
   * [2.2.文件测试符](chapter2.1/CHAPTER2.md)
