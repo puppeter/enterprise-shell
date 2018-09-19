@@ -33,7 +33,6 @@
     * [3.1.5. select循环](chapter3.1/CHAPTER4.md)
   * 3.2.分支语句
     * [3.2.1. 分支语句](chapter3.1/CHAPTER1.md)
-    * [3.2.2. 案例](chapter3.2/CHAPTER2.md)
 * 4.正则表达式
 * 5.子Shell、受限Shell和数组
 * 6.函数
