@@ -1,29 +1,14 @@
-##计算器
-通过条件语句实现的计算器。
+##判断是否为目录
+在if后面也不一定非得是test命令或者是用于条件判断的中括号结构[ ] 或 [[ ]]。
 ```
 #!/bin/bash
 # author:djangwoang
-# filename:jisuanqi.sh
-echo "please input your first number"
-read a
-echo "please input + - * /"
-read b 
-echo "please input your second number"
-read c
+# filename:checkDir.sh
 
-if [ "x$b" == "x" ];then
-    echo "please input + - * /"
-elif [ "$b" == "+" ];then
-    tmp=$((a+b))
-elif [ "$b" == "-" ];then
-    tmp=$((a-b))
-elif [ "$b" == "*" ];then
-    tmp=$((a*b))
-elif [ "$b" == "/" ];then
-    tmp=$((a/b))
-else
-    echo "please input + - * /"
+dir=/home/bozo
+
+if cd "$dir" 2>/dev/null; then   # "2>/dev/null" 会隐藏错误信息.
+    echo "Now in $dir."
+    else  echo "Can't change to $dir."
 fi
-
-echo "result is:${tmp}"
 ```

@@ -4,6 +4,7 @@
 #!/bin/bash
 # author:djangwoang
 # filename:jisuanqi.sh
+
 echo "please input your first number"
 read a
 echo "please input + - * /"
