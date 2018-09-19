@@ -6,4 +6,5 @@
 这个章节。
 
 参考
-Bash高级编程指南 http://teliute.org/linux/abs-3.9.1/testconstructs.html
+1.Bash高级编程指南 http://teliute.org/linux/abs-3.9.1/testconstructs.html
+2.Shell十三问 https://github.com/wzb56/13_questions_of_shell
