@@ -26,14 +26,4 @@ else
 fi
 
 echo "result is:${tmp}"
-
-
-
-
-
-
-
-
-
-
 ```
