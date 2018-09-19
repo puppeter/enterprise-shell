@@ -5,3 +5,5 @@
 
 这个章节。
 
+参考
+Bash高级编程指南 http://teliute.org/linux/abs-3.9.1/testconstructs.html
