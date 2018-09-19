@@ -1,25 +1,48 @@
-##1.[]和[[]]符号
-首先我们通过type命令来看一下[]和[[]]在Bash中是什么：
-``` 
-type "test" "[" "[["
-test is a shell builtin    # 内建命令
-[ is a shell builtin    # 内建命令
-[[ is a reserved word    # 关键字
+##字符串判断、与、或和非
+在编写Bash程序过程中我们经常会用到判断字符串是否为空，这里可以通过-z和-n来直接判断。
+* -z:字符串为null，即长度为0
+* -n:字符串不为null，即长度不为0
+
+案例：
 ```
-所以在Bash中[]等价于test命令,案例。
+# 判断字符串不为空
+#!/bin/bash
+string="hello world"
+if [ -n "$string" ];then
+echo "true"
+fi
+
+# 判断字符串为空
+#!/bin/bash
+string=""
+if [ -z "$string" ];then
+echo "true"
+fi
+
+# 判断字符串为空
+#!/bin/bash
+string=""
+if [ x"$string" == "x" ];then
+echo "true"
+fi
 ```
-test -f /etc/passwd   && echo true    # 结果为true
-[ -f /etc/passwd ] && echo  ture     # 结果为true
+Bash中的与、或和非。
+* -a 与
+* -o 或
+* \! 非
+
+案例：
 ```
-[]和[[]]符号。
-```
-[ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错
-[[ 10 -gt 20 && 3 -eq 3 ]]&&echo y||echo n    # 正常执行
-```
-两个符号相比：
-* 1.[[]]更通用一些，[]在bash下有效
-* 2.[]为Shell命令，所以比较操作符">" 与"<"必须转义否则就变成IO改向操作符。在[[中"<"与">"不需转义，案例如下
-```
-if [[ "$a" < "$b" ]]
-if [ "$a" \< "$b" ]
+if [ ! -d /etc/passwd ];then # 如果这不是一个目录结果为真
+echo "it's not dirctory"
+fi
+
+if [ -e /var/log/messages -a -r /var/log/messages ];then # 如果文件存在同时又可读的情况下，表达式为真
+echo "true"
+fi
+
+if [ ! -e /etc/passwd -o -w /etc/passwd ];then # 如果文件不存在或者文件有写权限的情况下，表达式为真
+echo "true"
+fi
+
 ```

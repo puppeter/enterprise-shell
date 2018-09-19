@@ -1,25 +1,52 @@
-##1.[]和[[]]符号
-首先我们通过type命令来看一下[]和[[]]在Bash中是什么：
-``` 
-type "test" "[" "[["
-test is a shell builtin    # 内建命令
-[ is a shell builtin    # 内建命令
-[[ is a reserved word    # 关键字
+#if..then..elif..fi
+if..then..elif的语法：
 ```
-所以在Bash中[]等价于test命令,案例。
+if [ 条件语句 ]
+then
+    执行内容
+elif [ 条件语句 ]
+then
+    执行内容
+...
+else
+    执行内容
+fi
 ```
-test -f /etc/passwd   && echo true    # 结果为true
-[ -f /etc/passwd ] && echo  ture     # 结果为true
+if..then..elif的案例，比较两个值是否相等。
 ```
-[]和[[]]符号。
+#!/bin/bash
+a=10
+b=20
+if [ $a == $b ]
+then
+    echo "a is equal to b"
+elif [ $a -gt $b ]    # a 大于 b 见表1
+then
+   echo "a is greater than b"
+elif [ $a -lt $b ]    # a 小于 b 见表1
+then
+   echo "a is less than b"
+else
+   echo "None of the condition met"
+fi
 ```
-[ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错
-[[ 10 -gt 20 && 3 -eq 3 ]]&&echo y||echo n    # 正常执行
-```
-两个符号相比：
-* 1.[[]]更通用一些，[]在bash下有效
-* 2.[]为Shell命令，所以比较操作符">" 与"<"必须转义否则就变成IO改向操作符。在[[中"<"与">"不需转义，案例如下
-```
-if [[ "$a" < "$b" ]]
-if [ "$a" \< "$b" ]
-```
+
+文件比较符，表1。
+
+| \[ \]括号 | （（））扩容 | 含义 |
+| :--- | :--- | :--- |
+| -eq | == | 等于 |
+| -ne | != | 不等于 |
+| -gt | &gt; | 大于 |
+| -ge | &gt;= | 大于等于 |
+| -lt | &lt; | 小于 |
+| -le | &lt;= | 小于等于 |
+
+
+
+
+
+
+
+
+
