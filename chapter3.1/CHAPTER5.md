@@ -2,6 +2,12 @@ until 循环执行一系列命令直至条件为 true 时停止。until 循环�
 
 ## 1.until循环语法
 ```
+until command;do    # 推荐
+    执行语句
+done
+
+# 或
+
 until command
 do
    执行语句
@@ -13,8 +19,7 @@ done
 ```
 #!/bin/bash
 a=0
-until [ ! $a -lt 10 ]
-do
+until [ ! $a -lt 10 ];do
    echo $a
    a=`expr $a + 1`
 done
