@@ -13,7 +13,7 @@
     * [1.2.5.特殊变量](chapter1.2/CHAPTER5.md)
   * [1.3.Bash符号相关](13bashfu-hao-xiang-guan.md)
     * [1.3.1.Bash符号相关](chapter1.3/CHAPTER1.md)
-    * [1.3.2.echo  && 特殊符号](chapter1.3/CHAPTER3.md)
+    * [1.3.2.echo  && printf](chapter1.3/CHAPTER3.md)
     * [1.3.3.数学运算符号](chapter1.3/CHAPTER2.md)
   * 1.4.内建命令与外部命令
     * [1.3.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
@@ -25,9 +25,9 @@
   * 3.1.循环语句
     * [3.1.1. while循环语句](chapter3.1/CHAPTER1.md)
     * [3.1.2. for循环](chapter3.1/CHAPTER2.md)
-    * [3.1.3. for..in](chapter3.1/CHAPTER3.md)
-    * [3.1.4. select](chapter3.1/CHAPTER4.md)
-    * [3.1.5. until](chapter3.1/CHAPTER5.md)
+    * [3.1.3. for..in循环](chapter3.1/CHAPTER3.md)
+    * [3.1.4. until循环](chapter3.1/CHAPTER5.md)
+    * [3.1.5. select循环](chapter3.1/CHAPTER4.md)
   * 3.2.分支语句
     * [3.2.1. 分支语句](chapter3.1/CHAPTER1.md)
     * [3.2.2. 案例](chapter3.2/CHAPTER2.md)

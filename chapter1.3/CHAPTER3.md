@@ -1,4 +1,4 @@
-## echo 与特殊符号
+##1.echo命令
 echo命令是我们学习Bash编程中一个很常用的命令，他用于打印信息到标准输出，譬如。
 ```
 echo "hello world"    # 打印hello world到标准输出
@@ -23,3 +23,13 @@ echo -e "hello\tworld"    # 解析参数中的制表符。
 | \b | 后退符 |
 | \a | 警告（蜂鸣或是闪动） |
 
+
+##2.printf命令
+我们再来看一下Printf命令。与echo相同的都是打印内容到屏幕上，但printf命令模仿 C 程序库（library里的 printf() 程序，它由 POSIX 标准所定义，因此使用printf的脚本比使用echo移植性好,以下为案例。
+```
+#!/bin/bash
+printf "%-10s %-8s %-4s\n" 姓名 性别 体重kg  
+printf "%-10s %-8s %-4.2f\n" wds 男 66.1 
+printf "%-10s %-8s %-4.2f\n" djangowang 男 77.6543 
+printf "%-10s %-8s %-4.2f\n" hanmeimei 女 57.9876 
+```
