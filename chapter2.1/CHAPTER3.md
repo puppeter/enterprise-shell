@@ -7,7 +7,6 @@ then
 elif [ 条件语句 ]
 then
     执行内容
-...
 else
     执行内容
 fi
