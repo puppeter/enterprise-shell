@@ -1,4 +1,4 @@
-#if..then..else..fi
+## 1.语法
 if..then..else的语法：
 
 ```
@@ -9,6 +9,7 @@ else
     执行内容2
 fi
 ```
+## 2.案例
 if..then的案例，比较两个值是否相等。
 ```
 #!/bin/sh

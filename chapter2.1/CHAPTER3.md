@@ -1,4 +1,4 @@
-#if..then..elif..fi
+## 1.语法
 if..then..elif的语法：
 ```
 if [ 条件语句 ]
@@ -12,6 +12,9 @@ else
     执行内容
 fi
 ```
+
+## 2.案例
+
 if..then..elif的案例，比较两个值是否相等。
 ```
 #!/bin/bash
