@@ -13,6 +13,7 @@
 ## 3.Bash变量案例
 在Bash中变量通过"$"符来表示，以下是一个Bash脚本的案例。
 ```
+#!/bin/bash
 name="This is Shell script"    # 将字符串赋值给name
 echo $name    # 打印变量$name
 ```
