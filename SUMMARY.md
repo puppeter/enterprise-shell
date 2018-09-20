@@ -13,7 +13,7 @@
     * [1.2.5.特殊变量](chapter1.2/CHAPTER5.md)
   * 1.3.Bash符号相关
     * [1.3.1.Bash符号相关](chapter1.3/CHAPTER1.md)
-    * [1.3.2.echo  && printf](chapter1.3/CHAPTER3.md)
+    * [1.3.2.echo && printf](chapter1.3/CHAPTER3.md)
     * [1.3.3.数学运算符号](chapter1.3/CHAPTER2.md)
   * 1.4.内建命令与外部命令
     * [1.4.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
