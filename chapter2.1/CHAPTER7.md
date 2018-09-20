@@ -8,22 +8,22 @@
 echo "please input your first number"
 read a
 echo "please input + - * /"
-read b 
+read b
 echo "please input your second number"
 read c
 
 if [ "x$b" == "x" ];then
-    echo "please input + - * /"
+echo "please input + - * /"
 elif [ "$b" == "+" ];then
-    tmp=$((a+b))
+tmp=$((a+c))
 elif [ "$b" == "-" ];then
-    tmp=$((a-b))
+tmp=$((a-c))
 elif [ "$b" == "*" ];then
-    tmp=$((a*b))
+tmp=$((a*c))
 elif [ "$b" == "/" ];then
-    tmp=$((a/b))
+tmp=$((a/c))
 else
-    echo "please input + - * /"
+echo "please input + - * /"
 fi
 
 echo "result is:${tmp}"
