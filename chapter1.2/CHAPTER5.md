@@ -1,4 +1,4 @@
-## Shell中的特殊变量
+## Bash中的特殊变量
 
 在Bash中有一些特殊的变量，他们分别是：
 
@@ -33,11 +33,39 @@ if [ $# -ne 3 ];then    # 位置变量通常用于判断位置参数的个数
 fi
 ```
 
-## 3.$\*变量
+## 3.$\* 和$@变量
+$* 和 $@ 都表示传递给函数或脚本的所有参数，不被双引号(" ")包含时，都以"$1" "$2" … "$n" 的形式输出所有参数。
+但是当它们被双引号(" ")包含时，"$*" 会将所有的参数作为一个整体，以"$1 $2 … $n"的形式输出所有参数；"$@" 会将各个参数分开，以"$1" "$2" … "$n" 的形式输出所有参数,以下是区别的案例。
 
-## 4.$@变量
+```
+#!/bin/bash
+echo "\$*=" $*
+echo "\"\$*\"=" "$*"
+echo "\$@=" $@
+echo "\"\$@\"=" "$@"
+echo "print each param from \$*"
+for var in $*
+do
+    echo "$var"
+done
+echo "print each param from \$@"
+for var in $@
+do
+    echo "$var"
+done
+echo "print each param from \"\$*\""
+for var in "$*"
+do
+    echo "$var"
+done
+echo "print each param from \"\$@\""
+for var in "$@"
+do
+    echo "$var"
+done
+```
 
-## 5.$?变量
+## 4.$?变量
 
 判断上一个命令或函数的返回状态，其中0表示成功，非0表示失败。
 
@@ -57,7 +85,7 @@ echo "hello world"
 exit 0    # 表示成功执行此脚本，退出状态码为0
 ```
 
-## 6.$$变量
+## 5.$$变量
 
 显示当前进程ID,我们在Linux系统中每执行一次命令或一个脚本都会启动一次进程，而进程ID就相当于唯一识别进程的身份证号。
 
