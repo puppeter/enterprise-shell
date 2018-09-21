@@ -1,5 +1,7 @@
 和C语言类似，在Bash中用if、then、elif、else、fi这几条命令实现分支控制。
+
 ## 1.语法
+
 if..then的语法：
 
 ```
@@ -28,7 +30,7 @@ if command ;then
 fi
 ```
 
-（注：初学者一定要注意以上if..then语法中，条件语句两边都是有空格的，缺少一个空格都会报错且不容易被注意到。）
+（**注：初学者一定要注意以上if..then语法中，条件语句两边都是有空格的，缺少一个空格都会报错且不容易被注意到。**）
 
 ## 2.案例
 
@@ -57,6 +59,7 @@ fi
     echo "true"
   fi
 ```
+
 * 3.if..command，判断是否为目录结构。
 
 ```
@@ -67,5 +70,6 @@ if cd "$dir" 2>/dev/null; then   # "2>/dev/null" 会隐藏错误信息.
     else  echo "Can't change to $dir."
 fi
 ```
+
 
 

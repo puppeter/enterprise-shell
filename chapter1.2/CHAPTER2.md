@@ -24,16 +24,14 @@ echo $name
 
 获取系统命令的标准输出并将标准输出内容赋值给变量command，并通过echo命令打印变量中的内容。这里注意命令赋值方式共分为两种见以下案例。
 
-```
-#!/bin/bash
-command = `date`    # 推荐赋值方式 ,其中“`” 是键盘按键1边上的符号。 
-echo $command
+    #!/bin/bash
+    command = `date`    # 推荐赋值方式 ,其中“`” 是键盘按键1边上的符号。 
+    echo $command
 
-# 或
+    # 或
 
-command = $(date)  
-echo $command
-```
+    command = $(date)  
+    echo $command
 
 ## 4.位置参数赋值
 
@@ -44,7 +42,9 @@ echo $command
 command = $1
 echo $command
 ```
+
 注意位置变量通常为数字$1-$9,10以上要用大括号扩起来如${10},${10},以下是案例。
+
 ```
 #!/bin/bash
 # argc.sh a b c d e f g h i j k
@@ -60,13 +60,15 @@ echo $9
 echo ${10}
 echo ${11}
 ```
+
 以上程序有个问题，如果位置参数要是大于10或更多这样写程序成本会很高且程序易读性也不好，这时我们可以使用shift命令，它用于参数的自动左移。
+
 ```
 #!/bin/bash
 while [ $# != 0 ]
 do
-echo "prama is $1,prama size is $#"
-shift
+    echo "prama is $1,prama size is $#"
+    shift
 done
 ```
 
