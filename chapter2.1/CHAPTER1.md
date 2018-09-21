@@ -2,7 +2,7 @@
 
 ## 1.语法
 
-if..then的语法：
+if..then..fi的语法：
 
 ```
 #!/bin/bash
