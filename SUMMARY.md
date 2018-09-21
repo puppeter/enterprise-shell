@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * 1.Shell编程基础
-  * 1.1.什么是Shell\]
+  * 1.1.什么是Shell
     * [1.1.1.什么是Shell](chapter1.1/CHAPTER1.md)
     * [1.1.2.编写第一个Bash程序](chapter1.1/CHAPTER2.md)
   * 1.2.变量
@@ -24,6 +24,7 @@
     * [2.1.1.if..then..fi](chapter2.1/CHAPTER1.md)
     * [2.1.2.if..then..else..fi](chapter2.1/CHAPTER2.md)
     * [2.1.3.if..then..elif..fi](chapter2.1/CHAPTER3.md)
+    * [2.1.4.空命令](chapter2.1/CHAPTER4.md)
   * 2.2.文件测试符
     * [2.2.1文件测试符](chapter2.1/CHAPTER4.md)
     * [2.2.2字符串判断、与、或和非](chapter2.1/CHAPTER5.md)
