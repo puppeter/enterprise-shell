@@ -13,17 +13,17 @@ echo "please input your second number"
 read c
 
 if [ "x$b" == "x" ];then
-echo "please input + - * /"
+    echo "please input + - * /"
 elif [ "$b" == "+" ];then
-tmp=$((a+c))
+    tmp=$((a+c))
 elif [ "$b" == "-" ];then
-tmp=$((a-c))
+    tmp=$((a-c))
 elif [ "$b" == "*" ];then
-tmp=$((a*c))
+    tmp=$((a*c))
 elif [ "$b" == "/" ];then
-tmp=$((a/c))
+    tmp=$((a/c))
 else
-echo "please input + - * /"
+    echo "please input + - * /"
 fi
 
 echo "result is:${tmp}"

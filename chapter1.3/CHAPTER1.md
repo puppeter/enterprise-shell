@@ -22,7 +22,7 @@
       #!/bin/bash
       string="command=`ls`"    # 打印出ls执行后的结果
       string=command=\`ls\`    # 转义后的效果。
-* 续行，通常用于Linux参数太长进行续行。以下案例为源码编译安装Nginx,因为一行装不下所有的参数，通常通过“\”进行续行
+* 续行，通常用于Linux参数太长进行续行。以下案例为源码编译安装Nginx，因为一行装不下所有的参数，通常通过“\”进行续行
   ```
   ./configure --sbin-path=/usr/local/nginx/nginx \
   --conf-path=/usr/local/nginx/nginx.conf \
@@ -99,9 +99,10 @@ ${file%%/_}：拿掉第一条 / 及其右边的字符串：\(空值\)
 ${file%._}：拿掉最后一个 . 及其右边的字符串：/dir1/dir2/dir3/my.file  
 ${file%%._}：拿掉第一个 . 及其右边的字符串：/dir1/dir2/dir3/my  
 ${file:0:5}：提取最左边的 5 个字节：/dir1  
-${file:5:5}：提取第 5 个字节右边的连续 5 个字节：/dir2  
+${file:5:5}：提取第 5 个字节右边的连续 5 个字节：/dir2
 
-###变量参数替换
+### 变量参数替换
+
 大括号${}变量的参数替换。
 
 | 命令 | 解释 | 备注 |

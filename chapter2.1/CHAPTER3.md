@@ -1,6 +1,16 @@
 ## 1.语法
 if..then..elif的语法：
 ```
+if [ 条件语句 ]；then
+    执行内容
+elif [ 条件语句 ]；then
+    执行内容
+else
+    执行内容
+fi
+
+# 或
+
 if [ 条件语句 ]
 then
     执行内容
@@ -19,7 +29,7 @@ if..then..elif的案例，比较两个值是否相等。
 #!/bin/bash
 a=10
 b=20
-if [ $a == $b ]
+if [ $a -eq $b ]
 then
     echo "a is equal to b"
 elif [ $a -gt $b ]    # a 大于 b 见表1

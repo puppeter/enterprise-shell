@@ -1,7 +1,7 @@
 select 是个无限循环，因此要记住用break命令退出循环或用exit命令终止脚本。也可以按ctrl+c 退出循环。
 
 ##1.select循环语法
-select语法
+select语法。
 ```
 select name   [in   list ];do    # 推荐 
     执行语句
