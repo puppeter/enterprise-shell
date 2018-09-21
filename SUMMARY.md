@@ -55,7 +55,7 @@
 * 7.Bash脚本风格
 * 8.Bash脚本调试
 * 9.sed && awk
-* 10 杂项
+* 10 Bash杂项
   * 10.1. Bash的陷阱 
     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
 * 11 案例介绍
