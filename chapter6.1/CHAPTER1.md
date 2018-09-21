@@ -9,14 +9,13 @@ functionName(){    # 推荐书写方式
 
 # 或
 
-
 function functionName(){
     函数内容
 }
 ```
 
 ## 2.函数案例
-函数的案例。
+1.函数的调用。
 ```
 #!/bin/bash
 demo(){
@@ -25,4 +24,34 @@ demo(){
 demo
 ```
 
-## 3.函数传入参数与返回参数
+2.函数的参数传递。
+```
+#!/bin/bash
+
+test(){
+    echo $1
+    echo $2
+}
+test "hi" "where do you come from"
+```
+
+3.函数的返回
+在Bash中函数通过return内建命令返回。
+```
+#!/bin/bash
+test(){
+
+    if (( $1 > 10 ));then
+        return 0
+    else
+        return 1    # 加入将return改为exit 0结果又会怎样
+    fi
+}
+
+test "4"
+echo $?
+echo "end.."
+```
+
+
+
