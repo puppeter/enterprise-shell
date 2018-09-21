@@ -81,7 +81,7 @@ export -p    # 列出所有的Shell赋予程序的环境变量
 
 ## 6.只读变量
 
-declare -r var1与readonly var1作用相同。当设置只读变量后，变量内容不可以修改
+declare -r var1与readonly var1作用相同。当设置只读变量后，变量内容不可以修改。
 
 ```
 declare -r var1    # 设置一个只读变量
@@ -89,6 +89,7 @@ declare -r var1    # 设置一个只读变量
 #或
 
 readonly var1
+readonly -p    # 用于显示只读变量的清单
 ```
 
 案例。
@@ -97,7 +98,7 @@ readonly var1
 #!/bin/bash
 url="http://blog.puppeter.com/"
 declare -r url    # 或readonly url变量
-url="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh: NAME: This variable is read only.”
+url="http://blog.puppeter.com/"    # 当修改变量时会报错误“/bin/sh: NAME: This variable is read only”
 ```
 
 ## 6.unset变量
