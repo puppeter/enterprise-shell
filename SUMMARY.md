@@ -49,15 +49,14 @@
     * [5.1.1.子Shell](chapter5.1/CHAPTER1.md)
     * [5.1.2.受限Shell](chapter5.1/CHAPTER2.md)
 * 6.函数
-  * 6.1.函数
+  * [6.1.函数](61han-shu.md)
     * [6.1.1 函数语法与案例](chapter6.1/CHAPTER1.md)
     * [6.1.2 递归函数](chapter6.1/CHAPTER1.md)
-  
 * 7.Bash脚本风格
 * 8.Bash脚本调试
 * 9.sed && awk
 * 10 杂项
-   * 10.1. Bash的陷阱 
-     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
+  * 10.1. Bash的陷阱 
+    * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
 * 11 案例介绍
 
