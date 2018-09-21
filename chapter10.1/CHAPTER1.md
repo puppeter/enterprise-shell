@@ -8,9 +8,9 @@ do
 done
 echo new_var is null: $new_var?
 ```
-## 
+
 原因，这使得while语句在子shell中执行，这意味着while语句内部设置的变量、数组、函数等在循环外部都不再生效。以下为解决方案。
-# 
+
 ```
 #!/bin/bash
 while read line
@@ -19,6 +19,8 @@ do
 done <<< "abc xyz"
 echo new_var is null: $new_var?
 ```
+"<<<" 以这种方式直接在命令之前分配的变量仅对命令进程生效。
+
 案例来源：https://www.cnblogs.com/f-ck-need-u/p/7431578.html
 
 ## 案例2 
