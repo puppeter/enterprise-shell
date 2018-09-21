@@ -24,7 +24,7 @@ fi
 
 ## 2.案例
 
-if..then..elif的案例，比较两个值是否相等。
+1.if..then..elif的案例，比较两个值是否相等。
 ```
 #!/bin/bash
 a=10
@@ -55,9 +55,36 @@ fi
 | -le | &lt;= | 小于等于 |
 
 
+2.通过条件语句实现的计算器。
 
+```
+#!/bin/bash
+# author:djangwoang
+# filename:jisuanqi.sh
 
+echo "please input your first number"
+read a
+echo "please input + - * /"
+read b
+echo "please input your second number"
+read c
 
+if [ "x$b" == "x" ];then
+    echo "please input + - * /"
+elif [ "$b" == "+" ];then
+    tmp=$((a+c))
+elif [ "$b" == "-" ];then
+    tmp=$((a-c))
+elif [ "$b" == "*" ];then
+    tmp=$((a*c))
+elif [ "$b" == "/" ];then
+    tmp=$((a/c))
+else
+    echo "please input + - * /"
+fi
+
+echo "result is:${tmp}"
+```
 
 
 
