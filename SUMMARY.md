@@ -45,13 +45,15 @@
     * [4.1.1. 基础基础介绍](chapter4.1/CHAPTER1.md)
     * [4.1.2. 通配](chapter4.1/CHAPTER2.md)
 * 5.子Shell和受限Shell
-  * 5.1子Shell和受限Shell
-    * [子Shell](chapter5.1/CHAPTER1.md)
-    * [受限Shell](chapter5.1/CHAPTER2.md)
+  * 5.1.子Shell和受限Shell
+    * [5.1.1.子Shell](chapter5.1/CHAPTER1.md)
+    * [5.1.2.受限Shell](chapter5.1/CHAPTER2.md)
 * 6.函数
 * 7.Bash脚本风格
 * 8.Bash脚本调试
 * 9.sed && awk
 * 10 杂项
+   * 10.1. Bash的陷阱 
+     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
 * 11 案例介绍
 
