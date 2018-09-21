@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * 1.Shell编程基础
-  * [1.1.什么是Shell](11shi-yao-shi-shell.md)
+  * 1.1.什么是Shell]
     * [1.1.1.什么是Shell](chapter1.1/CHAPTER1.md)
     * [1.1.2.编写第一个Bash程序](chapter1.1/CHAPTER2.md)
   * 1.2.变量
@@ -41,7 +41,13 @@
   * 3.2.分支语句
     * [3.2.1. 分支语句](chapter3.2/CHAPTER1.md)
 * 4.正则表达式
-* 5.子Shell、受限Shell和数组
+    * 4.1.正则表达式
+      * [4.1.1. 基础基础介绍](chapter4.1/CHAPTER1.md)
+      * [4.1.2. 通配](chapter4.1/CHAPTER2.md)
+* 5.子Shell和受限Shell
+    * 5.1子Shell和受限Shell
+      * 5.1.1 [子Shell](chapter5.1/CHAPTER1.md)
+      * 5.2.2 [受限Shell](chapter5.1/CHAPTER2.md)
 * 6.函数
 * 7.Bash脚本风格
 * 8.Bash脚本调试
