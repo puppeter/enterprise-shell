@@ -54,7 +54,11 @@
   * 6.2.函数的加载
     * [6.2.1 函数的加载](chapter6.2/CHAPTER1.md)
 * 7.Bash脚本风格
+  * 7.1.Bash脚本风格
+  * [7.1.1.Bash脚本风格](chapter7.1/CHAPTER1.md)
 * 8.Bash脚本调试
+  * 8.1.Bash脚本调试
+  * [8.1.1.Bash脚本调试](chapter8.1/CHAPTER1.md)
 * 9.sed && awk
     * 9.1.sed
     * 9.2.awk
