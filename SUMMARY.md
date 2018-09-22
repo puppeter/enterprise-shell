@@ -65,7 +65,7 @@
 * 10 Bash杂项
   * 10.1.Bash杂项
     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
-    * [10.1.2 Bash的搜索顺序](chapter10.1/CHAPTER2.md)
+    * [10.1.2 Bash的生命周期](chapter10.1/CHAPTER2.md)
     * [10.1.3 IO重定向](chapter10.1/CHAPTER3.md)
     * [10.1.4 trap](chapter10.1/CHAPTER4.md)
     * [10.1.5 eval](chapter10.1/CHAPTER5.md)
