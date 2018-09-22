@@ -54,7 +54,7 @@ echo "第四个元素为: ${array[3]}"
 
 ## 4.显示函数
 
-declare -f 显示函数
+declare -f 显示函数。
 
 ```
 #!/bin/bash

@@ -63,15 +63,15 @@ echo "hello\tworld\\n"    # 最终打印结果为hello    world\n
 案例1，在Bash中通过{}把一组命令放在一起执行，不过这里有两种方式在大括号中执行命令，分别用“，”和“..”作为命令的分割符。譬如我要创建a.txt、b.txt和c.txt文本文件。
 
 ```
-touch {a,b,c}.txt    # 用,进行分割方式
-touch {a..c}.txt    # 用..进行分割方式
-touch {ex{1..3},ex4}    # ，和..两种方式
+[root@blog.puppeter.com_centos ~]# touch {a,b,c}.txt    # 用,进行分割方式
+[root@blog.puppeter.com_centos ~]# touch {a..c}.txt    # 用..进行分割方式
+[root@blog.puppeter.com_centos ~]# touch {ex{1..3},ex4}    # ，和..两种方式
 ```
 
 案例2，在Bash通过\(\)以子Shell进程方式来执行命令组。
 
 ```
-(ls && touch {a..f} && ls )    # 将多个命令放到（）中，用子Shell方式运行。 && 表示前一个命令执行成功的情况下再执行后一个命令
+[root@blog.puppeter.com_centos ~]# (ls && touch {a..f} && ls )    # 将多个命令放到（）中，用子Shell方式运行。 && 表示前一个命令执行成功的情况下再执行后一个命令
 ```
 
 ## 5.大括号${}

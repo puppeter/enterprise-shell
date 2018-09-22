@@ -1,6 +1,6 @@
 # 1.编写第一个Bash脚本程序
 
-这里我们来编写一个Bash程序，以在屏幕打印出hello world为例(注：[hello world的起源](http://blog.puppeter.com/read.php?25))，VIM编辑hello.sh内容如下。
+这里我们来编写一个Bash程序，以在屏幕打印出hello world为例\(注：[hello world的起源](http://blog.puppeter.com/read.php?25)\)，VIM编辑hello.sh内容如下。
 
 ```
 #! /bin/bash Bash的命令解释器
@@ -37,18 +37,20 @@ echo "hello wolrd"    # 调用系统命令打印结果。
 ```
 #!/bin/bash
 <<COMMENT
-author：djangowang
-time: 2018098
-filename: hi.sh
+    author：djangowang
+    time: 2018098
+    filename: hi.sh
 COMMENT
 ```
 
-或更简单的方式。
+或更简单的方式，使用"‘"。
 
 ```
+#!/bin./bash
 : '
-COMMENT1
-COMMENT2
+    author：djangowang
+    time: 2018098 
+    filename: hi.sh
 '
 ```
 

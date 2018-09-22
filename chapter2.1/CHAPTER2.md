@@ -22,7 +22,7 @@ fi
 
 ## 2.案例
 
-if..then..else..fi的案例，比较两个值是否相等。
+1.if..then..else..fi的案例，比较两个值是否相等。
 
 ```
 #!/bin/sh

@@ -60,8 +60,8 @@
   * 8.1.Bash脚本调试
   * [8.1.1.Bash脚本调试](chapter8.1/CHAPTER1.md)
 * 9.sed && awk
-    * 9.1.sed
-    * 9.2.awk
+  * 9.1.sed
+  * 9.2.awk
 * 10 Bash杂项
   * 10.1.Bash杂项
     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)

@@ -3,7 +3,7 @@
 首先我们通过type命令来看一下\[\]和\[\[\]\]在Bash中是什么：
 
 ```
-type "test" "[" "[["
+[root@blog.puppeter.com_centos ~]# type "test" "[" "[["
 test is a shell builtin    # 内建命令
 [ is a shell builtin    # 内建命令
 [[ is a reserved word    # 关键字
@@ -12,15 +12,15 @@ test is a shell builtin    # 内建命令
 所以在Bash中\[\]等价于test命令,案例。
 
 ```
-test -f /etc/passwd   && echo true    # 结果为true
-[ -f /etc/passwd ] && echo  ture     # 结果为true
+[root@blog.puppeter.com_centos ~]#  test -f /etc/passwd   && echo true    # 结果为true
+[root@blog.puppeter.com_centos ~]#  [ -f /etc/passwd ] && echo  ture     # 结果为true
 ```
 
 \[\]和\[\[\]\]符号。
 
 ```
-[ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错
-[[ 10 -gt 20 && 3 -eq 3 ]]&&echo y||echo n    # 正常执行
+[root@blog.puppeter.com_centos ~]#  [ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错
+[root@blog.puppeter.com_centos ~]#  [[ 10 -gt 20 && 3 -eq 3 ]]&&echo y||echo n    # 正常执行
 ```
 
 两个符号相比：
