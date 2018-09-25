@@ -19,7 +19,7 @@ test is a shell builtin    # 内建命令
 \[\]和\[\[\]\]符号。
 
 ```
-[root@blog.puppeter.com_centos ~]#  [ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错
+[root@blog.puppeter.com_centos ~]#  [ 10 -gt 20 && 3 -eq 3 ]&&echo y||echo n    # 会报错 
 [root@blog.puppeter.com_centos ~]#  [[ 10 -gt 20 && 3 -eq 3 ]]&&echo y||echo n    # 正常执行
 ```
 

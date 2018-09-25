@@ -44,7 +44,7 @@ test(){
     if (( $1 > 10 ));then
         return 0
     else
-        return 1    # 加入将return改为exit 0结果又会怎样
+        return 1    # 假如将return改为exit 0结果又会怎样
     fi
 }
 

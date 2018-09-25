@@ -1,57 +1,28 @@
-在编程中，为了简化代码量，通常会将经常调用的一些代码模块化，并一一个名字表示，当再次使用该模块时只需要输入该名字，系统会自动去读取该名字所对应的代码模块。因此在计算机中把一段独立功能的代码当做一个整体，并为之命一个名字，命名的代码段即为函数。
+我们刚已经了解了函数的基本使用场景，很多时候函数用于节约我们的代码量，这里我们就用到了函数的加载。在Bash中函数有两种加载方式：
+* "." 点
+* source,Bash的内建命令
+我们来看一下函数的应用场景，譬如我们有两个文件function.sh和test1.sh，其中functin.sh放了我们常用的函数，test1.sh是我们执行的脚本。
 
-## 1.函数语法
-在Bash中函数有两种书写方式。
+functin.sh内容。
 ```
-functionName(){    # 推荐书写方式
-    函数内容
-}
+# 加载系统环境变量
+PATH=$PA TH:/usr/local/mysql/bin/:/Users/djangowang/wokrs/tools/clip/
 
-# 或
-
-function functionName(){
-    函数内容
-}
-```
-
-## 2.函数案例
-1.函数的调用。
-```
-#!/bin/bash
-demo(){
-    echo "this is my first function"
-}
-demo
-```
-
-2.函数的参数传递。
-```
-#!/bin/bash
-
-test(){
-    echo $1
-    echo $2
-}
-test "hi" "where do you come from"
-```
-
-3.函数的返回
-在Bash中函数通过return内建命令返回。
-```
-#!/bin/bash
-test(){
-
-    if (( $1 > 10 ));then
-        return 0
+checkDirectory(){
+    $directorPath=$1
+    if [ -d "$direcotryPath" ];then
+        return "this is directory"
     else
-        return 1    # 加入将return改为exit 0结果又会怎样
+        return "is not directory"
     fi
 }
-
-test "4"
-echo $?
-echo "end.."
 ```
+test1.sh内容.这里我们可以使用第一种加载方式也可以使用第二种加载方式。
+```
+#!/bin/bash
+. function.sh    # 加载方式1
+source function.sh    # 加载方式2
 
+checkDirectory "/etc/passwd"
 
-
+```
