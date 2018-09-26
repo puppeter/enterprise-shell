@@ -9,11 +9,8 @@
 
 functin.sh内容。
 ```
-# 加载系统环境变量
-PATH=$PATH:/usr/local/mysql/bin/:/Users/djangowang/wokrs/tools/clip/
-
 checkDirectory(){
-    $directorPath=$1
+    directorPath=$1
     if [ -d "$direcotryPath" ];then
        echo "is directory"
     else
@@ -24,9 +21,8 @@ checkDirectory(){
 test1.sh内容.这里我们可以使用第一种加载方式也可以使用第二种加载方式。
 ```
 #!/bin/bash
-. function.sh    # 加载方式1
+. function.sh    # 加载方式1,注意"."后接空格+文件
 source function.sh    # 加载方式2
 
 checkDirectory "/etc/passwd"
-
 ```
