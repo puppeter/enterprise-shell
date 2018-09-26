@@ -62,13 +62,15 @@
 * 9.sed && awk
   * 9.1.sed
   * 9.2.awk
-* 10 Bash杂项
+* 10 Bash杂项 && 案例
   * 10.1.Bash杂项
     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
     * [10.1.2 Bash的生命周期](chapter10.1/CHAPTER2.md)
     * [10.1.3 IO重定向](chapter10.1/CHAPTER3.md)
-    * [10.1.4 trap](chapter10.1/CHAPTER4.md)
+    * [10.1.4 Bash和sh区别](chapter10.1/CHAPTER4.md)
     * [10.1.5 eval](chapter10.1/CHAPTER5.md)
     * [10.1.6 wait](chapter10.1/CHAPTER6.md)
-* 11 案例介绍
+    * [10.1.7 trap](chapter10.1/CHAPTER7.md)
+  * 10.2.案例
+    * [10.1.7 Bash版回收站](chapter10.2/CHAPTER1.md)
 
