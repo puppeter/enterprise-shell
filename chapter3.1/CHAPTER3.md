@@ -33,8 +33,8 @@ done
 ```
 3.创建1-100的文件夹。
 ```
-for i in `seq 1 100`;do
-    mkdir $i
+for loop in `seq 1 100`;do
+    mkdir $loop
 done
 ```
 
