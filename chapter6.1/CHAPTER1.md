@@ -36,7 +36,7 @@ test "hi" "where do you come from"
 ```
 
 3.函数的返回
-在Bash中函数通过return内建命令返回。
+在Bash中函数通过return内建命令返回(注：return只能返回数值型)。
 ```
 #!/bin/bash
 test(){
