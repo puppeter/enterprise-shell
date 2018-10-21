@@ -17,7 +17,7 @@
     * [1.3.3.数学运算符号](chapter1.3/CHAPTER2.md)
   * 1.4.内建命令与外部命令
     * [1.4.1.内建命令与外部命令](chapter1.4/CHAPTER1.md)
-  * 1.5.read命令
+  * 1.5.read命令   
     * [1.5.1.read命令](chapter1.5/CHAPTER1.md)
 * 2.Bash条件语句
   * 2.1.条件语句
@@ -54,10 +54,10 @@
     * [6.2.1 函数的加载](chapter6.2/CHAPTER1.md)
 * 7.Bash脚本风格
   * 7.1.Bash脚本风格
-  * [7.1.1.Bash脚本风格](chapter7.1/CHAPTER1.md)
+  * 7.1.1.Bash脚本风格\]\(chapter7.1/CHAPTER1.md\)
 * 8.Bash脚本调试
   * 8.1.Bash脚本调试
-  * [8.1.1.Bash脚本调试](chapter8.1/CHAPTER1.md)
+    * [8.1.1.Bash脚本调试](chapter8.1/CHAPTER1.md)
 * 9.sed && awk
   * 9.1.sed
   * 9.2.awk
