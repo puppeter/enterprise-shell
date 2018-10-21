@@ -92,4 +92,18 @@ echo $a
 echo bar
 ```
 
-set -e的用法。
+set -e的用法。以下案例foo是一个不存在的命令，执行时会报错(1.sh: line 2: foo: command not found)但是Bash会忽略这个错误继续往下执行。
+
+```
+#!/bin./bash
+foo
+echo bar
+```
+-e 的作用就是脚本出现了问题就立马终止执行。
+```
+#!/bin./bash
+set -e 
+foo
+echo bar
+```
+
