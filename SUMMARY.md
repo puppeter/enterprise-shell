@@ -20,7 +20,7 @@
   * 1.5.read命令   
     * [1.5.1.read命令](chapter1.5/CHAPTER1.md)
 * 2.Bash条件语句
-  * 2.1.条件语句
+  * 2.1.条件语句  
     * [2.1.1.if..then..fi](chapter2.1/CHAPTER1.md)
     * [2.1.2.if..then..else..fi](chapter2.1/CHAPTER2.md)
     * [2.1.3.if..then..elif..fi](chapter2.1/CHAPTER3.md)

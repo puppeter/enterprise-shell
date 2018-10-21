@@ -12,14 +12,14 @@ name=$1
 pass=$2
 
 echo $name   # 打印名字
-echo $pass
+echo $pass 
 
 if [ "$name" == "djangowang" -a "${pass}" == "123456" ];then
     echo "login succ"
 fi
 
 ```
-
+  
 
 ## 方法2
 通过Bash自带参数：
@@ -63,6 +63,33 @@ login succ
 ```
 
 ## 方法3
-set是Bash的内建命令
+set是Bash的内建命令,经常用于程序的调试，注以下案例部分参考了http://www.ruanyifeng.com/blog/2017/11/bash-set.html?utm_source=tool.lu。
 
-=
+我们来看一下-x和+x的用法,以下是打印1-5的数字，其中-x用于打开调试，+x用于关闭调试。在程序执行过程中会看到打印到3，4时前面会有+号打印出调试信息。
+```
+#!/bin/bash
+
+echo "1"
+echo "2"
+set -x
+echo "3"
+echo "4"
+set +x
+echo "5"
+```
+
+set -u的用法。 以下程序会在屏幕上打印出bar,其中变量$a是一个不存在的变量默认不会打出。
+```
+#!/bin/bash
+echo $a
+echo bar
+```
+我们对程序稍做修改，增加set -u会发现当遇到不存在的变量时程序会报错（1.sh: line 4: a: unbound variable）。
+```
+#!/bin/bash
+set -u
+echo $a
+echo bar
+```
+
+set -e的用法
