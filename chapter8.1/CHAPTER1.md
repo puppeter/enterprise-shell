@@ -92,4 +92,4 @@ echo $a
 echo bar
 ```
 
-set -e的用法
+set -e的用法。
