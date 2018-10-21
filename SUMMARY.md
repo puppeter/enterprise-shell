@@ -41,8 +41,7 @@
     * [3.2.1. case分支语句](chapter3.2/CHAPTER1.md)
 * 4.正则表达式
   * 4.1.正则表达式
-    * [4.1.1. 基础基础介绍](chapter4.1/CHAPTER1.md)
-    * [4.1.2. 通配](chapter4.1/CHAPTER2.md)
+    * [4.1.1. 正则表达式](chapter4.1/CHAPTER1.md)
 * 5.子Shell和受限Shell
   * 5.1.子Shell和受限Shell
     * [5.1.1.子Shell](chapter5.1/CHAPTER1.md)
