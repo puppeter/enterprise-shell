@@ -11,7 +11,7 @@ done
 echo new_var is null: $new_var?
 ```
 
-原因，这使得while语句在子Shell中执行，这意味着while语句内部设置的变量、数组、函数等在循环外部都不再生效。以下为解决方案。
+原因，这使得while语句在子Shell中执行，意味着while语句内部设置的变量、数组、函数等在循环外部都不再生效。以下为解决方案。
 
 ```
 #!/bin/bash

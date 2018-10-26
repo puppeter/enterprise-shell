@@ -66,7 +66,7 @@
     * [10.1.1 while循环的陷阱](chapter10.1/CHAPTER1.md)
     * [10.1.2 Bash的生命周期](chapter10.1/CHAPTER2.md)
     * [10.1.3 IO重定向](chapter10.1/CHAPTER3.md)
-    * [10.1.4 Bash和sh区别](chapter10.1/CHAPTER4.md)
+    * [10.1.4 /bin/bash和/bin/sh区别](chapter10.1/CHAPTER4.md)
     * [10.1.5  命令杂项](chapter10.1/CHAPTER5.md)
   * 10.2.案例
     * [10.1.7 Bash版回收站](chapter10.2/CHAPTER1.md)

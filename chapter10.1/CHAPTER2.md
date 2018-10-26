@@ -1,6 +1,6 @@
 ## Bash的生命周期
 
-让我们来了解一下Bash从开始到、执行过程到结束它是什么一个过程。（注:本文主要参考[zooro的文章](https://mp.weixin.qq.com/s?__biz=MzIxNDMyODgyMA==&mid=2247483666&idx=1&sn=b3df5f3f8d8803fb88719463388db4ed&scene=0#wechat_redirect。)）
+让我们来了解一下Bash从开始到、执行过程到结束它是什么一个过程。
 
 ### Bash的开始
 
@@ -76,8 +76,12 @@ alias is a shell builtin
 hits    command
    1    /bin/ls
 ```
+最后是外部命令，外部命令主要搜索$PATH变量。
 
-1. 最后是外部命令，外部命令主要搜索$PATH变量。
+案例来源:[zooro的文章](https://mp.weixin.qq.com/s?__biz=MzIxNDMyODgyMA==&mid=2247483666&idx=1&sn=b3df5f3f8d8803fb88719463388db4ed&scene=0#wechat_redirect。)
+
+
+
 
 
 
