@@ -1,3 +1,4 @@
+这表是笔者整理资料查到的感觉非常不错，在这里也分享给大家。
 https://raw.githubusercontent.com/skywind3000/awesome-cheatsheets/master/languages/bash.sh
 ##############################################################################
 # BASH CHEATSHEET (中文速查表)  -  by skywind (created on 2018/02/14)
