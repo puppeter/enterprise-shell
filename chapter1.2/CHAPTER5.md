@@ -100,3 +100,13 @@ exit 0    # 表示成功执行此脚本，退出状态码为0
 
 如果我们写了一个程序是常驻内存的，可以把此进程ID写到程序的pid文件中来告诉当前程序运行过程中的进程ID值，其实这有点像Apache和Nginx，这两款WEB服务都会将当前进程的ID值写入自己的pid文件中，当我要重启或关闭时其实就是获取pid文件中的进程ID并发送KILL信号。
 
+
+## 6.$!变量
+将一程序放在系统后台，打印$!放在后台这个程序的pid。
+
+```
+[root@blog.puppeter.com_centos ~]# sh 2.sh &
+[1] 57947
+[root@blog.puppeter.com_centos ~]# echo $!
+57947
+```
