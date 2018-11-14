@@ -2,6 +2,12 @@
 
 [https://github.com/wzb56/13\_questions\_of\_shell/blob/master/15.regular-expression.md](https://github.com/wzb56/13_questions_of_shell/blob/master/15.regular-expression.md)
 
+# grep命令
+因为本节正则大部分使用了grep命令，这里有必要介绍一下常用的两个参数：
+* -E --extended-regexp
+* -o --only-matching 只显示匹配的内容
+
+
 # 基础的正则表示式
 
 现在我们开始学习一些被称为元字符MetaCharacters的特殊字符。它们可以帮助我们创建更复杂的正则表达式搜索项。下面提到的是基本元字符的列表，
@@ -69,8 +75,10 @@
   10.65.86.40
   10.65.86.255
   ```
-* `{,m}`将匹配少于或等于 m 次的项
 * `\`是一个转义字符，当我们需要在我们的搜索中包含一个元字符时使用
-
+```
+[root@blog.puppeter.com_centos ~]# echo "[]" | grep -Eo "\[\]"
+[]
+```
 
 
