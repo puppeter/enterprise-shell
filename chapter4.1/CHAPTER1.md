@@ -8,7 +8,7 @@
 
 * `.` 点将匹配任意字符
   ```
-  [root@blog.puppeter.com_centos ~]# echo '1121、1122、112abc、1123131231' | grep -Eo '112.'
+[root@blog.puppeter.com_centos ~]# echo '1121、1122、112abc、1123131231' | grep -Eo '112.'
   1121
   1122
   112a
@@ -16,7 +16,7 @@
   ```
 * `[ ]`将匹配一个字符范围,其中^表示取反
   ```
-  [root@blog.puppeter.com_centos ~]#  echo "a b c d " \| grep -Eo '\[abc\]'
+[root@blog.puppeter.com_centos ~]#  echo "a b c d " \| grep -Eo '\[abc\]'
   a
   b
   c
@@ -25,7 +25,7 @@
   ```
 * `*`将匹配零个或多个前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" \| grep -Eo '1122\*'  
+[root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" \| grep -Eo '1122\*'  
   112  
   1122  
   1122222  
@@ -33,13 +33,13 @@
   ```
 * `+`将匹配一个或多个前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "abc abbc abbb" | grep -Eo 'ab+c'
+[root@blog.puppeter.com_centos ~]# echo "abc abbc abbb" | grep -Eo 'ab+c'
   abc
   abbc
   ```
 * `*`将匹配零个或多个前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" \| grep -Eo '1122\*'  
+[root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" \| grep -Eo '1122\*'  
   112  
   1122  
   1122222  
@@ -47,24 +47,24 @@
   ```
 * ?将匹配零个或一个前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "ac abc " | grep -Eo 'ab?c'
+[root@blog.puppeter.com_centos ~]# echo "ac abc " | grep -Eo 'ab?c'
   ac
   abc
   ```
 * `{n}`将匹配 n 次前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "abcdef aaacc aaca" | grep -Eo 'a{3}'
+[root@blog.puppeter.com_centos ~]# echo "abcdef aaacc aaca" | grep -Eo 'a{3}'
   aaa
   ```
 * `{n,}`将匹配 n 次或更多前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "abcdef aaacc aaaaca" | grep -Eo 'a{3,}'
+[root@blog.puppeter.com_centos ~]# echo "abcdef aaacc aaaaca" | grep -Eo 'a{3,}'
   aaa
   aaaa
   ```
 * `{n,m}`将匹配在 n 和 m 次之间的项
   ```
-  [root@blog.puppeter.com_centos ~]# ifconfig | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+[root@blog.puppeter.com_centos ~]# ifconfig | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
   127.0.0.1
   10.65.86.40
   10.65.86.255
