@@ -11,30 +11,33 @@
 
 # 基础的正则表示式
 
-现在我们开始学习一些被称为元字符MetaCharacters的特殊字符。它们可以帮助我们创建更复杂的正则表达式搜索项。下面提到的是基本元字符的列表，
-
 * ^ 匹配开头的字符
+
   ```
   [root@blog.puppeter.com_centos ~]# cat /etc/passwd | grep -E "^root"
   root:x:0:0:root:/root:/bin/bash
-  
+
   [root@blog.puppeter.com_centos ~]# cat /etc/passwd | grep -E "root"
   root:x:0:0:root:/root:/bin/bash
   operator:x:11:0:operator:/root:/sbin/nologin
   dockerroot:x:994:991:Docker User:/var/lib/docker:/sbin/nologin
   ```
+
 * $ 匹配结尾的字符
+
   ```
   [root@blog.puppeter.com_centos ~]# cat /etc/passwd | grep "root"
   root:x:0:0:root:/root:/bin/bash
   operator:x:11:0:operator:/root:/sbin/nologin
   dockerroot:x:994:991:Docker User:/var/lib/docker:/sbin/nologin
-  
-  [root@VM_99_152_centos ~]# cat /etc/passwd | grep "root" | grep "nologin$"
+
+  [root@blog.puppeter.com_centos ~]# cat /etc/passwd | grep "root" | grep "nologin$"
   operator:x:11:0:operator:/root:/sbin/nologin
   dockerroot:x:994:991:Docker User:/var/lib/docker:/sbin/nologin
   ```
+
 * `.` 点将匹配任意字符
+
   ```
   [root@blog.puppeter.com_centos ~]# echo '1121、1122、112abc、1123131231' | grep -Eo '112.'
   1121
@@ -42,24 +45,35 @@
   112a
   1123
   ```
-* `[ ]`将匹配一个字符范围,其中^表示取反
+
+* `[ ]`将匹配一个字符范围,其中^表示取反，-表示取范围
+
   ```
-  [root@blog.puppeter.com_centos ~]#  echo "a b c d " \| grep -Eo '\[abc\]'
+  [root@blog.puppeter.com_centos ~]# echo "a b c d " | grep -Eo '[abc]'
   a
   b
   c
-  
-  [root@blog.puppeter.com_centos ~]#  echo "a b c d " \| grep -Eo '\[^abc\]'
+
+  [root@blog.puppeter.com_centos ~]# echo "a b c d " | grep -Eo '[^abc]'
+  d
+
+  [root@blog.puppeter.com_centos ~]# echo "a b c d 1 2 3" | grep -Eo "[a-z]"
+  a
+  b
+  c
   d
   ```
+
 * `*`将匹配零个或多个前面的项
+
   ```
-  [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" \| grep -Eo '1122\*'  
+  [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" | grep -Eo '1122*'  
   112  
   1122  
   1122222  
   112
   ```
+
 * `+`将匹配一个或多个前面的项
   ```
   [root@blog.puppeter.com_centos ~]# echo "abc abbc abbb" | grep -Eo 'ab+c'
@@ -68,11 +82,17 @@
   ```
 * `*`将匹配零个或多个前面的项
   ```
-  [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" \| grep -Eo '1122\*'  
+  [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" | grep -Eo '1122*'  
   112  
   1122  
   1122222  
   112
+  ```
+* \(\) 通常用于取一个单词或者或者的情况，譬如\(glad\) 或 \(good\) 这两个字串,通过\|来分割或的关系
+  ```
+  [root@blog.puppeter.com_centos ~]# echo "gland good group" | grep -Eo "g(lan|oo)d"
+  gland
+  good
   ```
 * ?将匹配零个或一个前面的项
   ```
