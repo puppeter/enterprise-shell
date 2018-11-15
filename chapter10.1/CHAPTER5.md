@@ -23,7 +23,7 @@ ls: |: No such file or directory
     16
 ```
 
-当Bash第一次扫描命令时会替换出pipe中的\|，接着eval使它再次扫描命令时，这时Bash把\|作为管道符号。
+当Bash第一次扫描命令时会替换出pipe中的\|，接着eval使它再次扫描命令时，这时Bash把\|作为管道符号。不过建议不要过多的使用eval命令会导致脚本性能比较差。
 
 # wait 命令
 
@@ -32,8 +32,8 @@ wait是用来阻塞当前进程的执行，直至指定的子进程执行结束�
 ```
 #!/bin/bash
 sleep 10 &
-sleep 5&
-wait #等待10秒后，退出
+wait # 等待10秒后，退出
+exit 0
 ```
 
 如果wait后面不带任何的进程号或作业号，那么wait会阻塞当前进程的执行，直至当前进程的所有子进程都执行结束后，才继续执行。
@@ -81,17 +81,20 @@ do
     :
 done
 ```
+
 我们可以通过kill命令或trap命令看到信号的列表和含义。以下以kill -l 为例大家还可以执行trap -l 最终的执行结果都是一样的没有太大区别。
+
 ```
 [root@blog.puppeter.com_centos ~]# kill -l
- 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL
- 5) SIGTRAP	 6) SIGABRT	 7) SIGEMT	 8) SIGFPE
- 9) SIGKILL	10) SIGBUS	11) SIGSEGV	12) SIGSYS
-13) SIGPIPE	14) SIGALRM	15) SIGTERM	16) SIGURG
-17) SIGSTOP	18) SIGTSTP	19) SIGCONT	20) SIGCHLD
-21) SIGTTIN	22) SIGTTOU	23) SIGIO	24) SIGXCPU
-25) SIGXFSZ	26) SIGVTALRM	27) SIGPROF	28) SIGWINCH
-29) SIGINFO	30) SIGUSR1	31) SIGUSR2
+ 1) SIGHUP     2) SIGINT     3) SIGQUIT     4) SIGILL
+ 5) SIGTRAP     6) SIGABRT     7) SIGEMT     8) SIGFPE
+ 9) SIGKILL    10) SIGBUS    11) SIGSEGV    12) SIGSYS
+13) SIGPIPE    14) SIGALRM    15) SIGTERM    16) SIGURG
+17) SIGSTOP    18) SIGTSTP    19) SIGCONT    20) SIGCHLD
+21) SIGTTIN    22) SIGTTOU    23) SIGIO    24) SIGXCPU
+25) SIGXFSZ    26) SIGVTALRM    27) SIGPROF    28) SIGWINCH
+29) SIGINFO    30) SIGUSR1    31) SIGUSR2
 ```
+
 
 
