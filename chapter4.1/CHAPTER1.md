@@ -75,11 +75,13 @@
   ```
 
 * `+`将匹配一个或多个前面的项
+
   ```
   [root@blog.puppeter.com_centos ~]# echo "abc abbc abbb" | grep -Eo 'ab+c'
   abc
   abbc
   ```
+
 * `*`将匹配零个或多个前面的项
   ```
   [root@blog.puppeter.com_centos ~]# echo "112、1122、1122222、1123131231" | grep -Eo '1122*'  
