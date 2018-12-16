@@ -12,7 +12,7 @@
 
 # 书的目录
 
-# ![](/assets/Shell 企业级应用.png)
+# ![](/assets/Shell 企业级应用20181216.png)
 
 # 本书参考
 
