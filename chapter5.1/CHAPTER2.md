@@ -1,3 +1,4 @@
+## 受限Shell
 \#!/bin/bash -r\(restricted bash\)即受限制的bash,其可以用作中转服务器或者仅使用 ssh 来访问网页等等。我们可以用\#!/bin/bash -r或set -r方式运行Bash受限模式，开启受限模式后具体表现如下：
 
 * 通过 cd 来改变工作目录

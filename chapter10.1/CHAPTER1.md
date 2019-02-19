@@ -1,4 +1,5 @@
-## 案例1
+## while循环陷阱
+### 案例1
 
 在写while循环的时候，发现了一个问题，在while循环内部对变量赋值、定义变量、数组定义等等在循环外面会失效，失效案例如下。
 
@@ -26,7 +27,7 @@ echo new_var is null: $new_var?
 
 案例来源：[https://www.cnblogs.com/f-ck-need-u/p/7431578.html](https://www.cnblogs.com/f-ck-need-u/p/7431578.html)
 
-## 案例2
+### 案例2
 
 今天在一些机器上批量执行命令，将10多个IP追加到指定文件中（ip）通过以下Shell方式来批量执行。
 
