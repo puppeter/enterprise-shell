@@ -12,7 +12,7 @@
 
 #### 案例1
 
-使用（）操作符来创建子进程。
+使用\(\)操作符来创建子进程。
 
 ```
 #!/bin/bash
@@ -46,17 +46,17 @@ fi
 
 ```
 #!/bin/bash
-(grep -r "root" /etc/* | sort > part1)       &       #与root关键字匹配的行，排序后输出到某文件
+(grep -r "root" /etc/* | sort > part1)       &    # 与root关键字匹配的行，排序后输出到某文件
 (grep -r "root" /usr/local/* | sort > part2) &
 (grep -r "root" /lib/* | sort > part3)       &
-wait                                                 #等待后台执行的作业全部完成
+wait                                              # 等待后台执行的作业全部完成
 cat part1 part2 part3 | sort > parttotal
-echo "Run time of this script is:$SECONDS"           #输出该脚本执行时间
+echo "Run time of this script is:$SECONDS"        # 输出该脚本执行时间
 ```
 
 #### 案例3
 
-有的同学也会关心\(\)和{}的区别，其实他们都是对命令组执行：
+有的同学也会关心\(\)和{}操作符的区别，其实他们都是对命令组执行：
 
 相同点：
 
