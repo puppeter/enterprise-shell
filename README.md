@@ -21,3 +21,6 @@
 3.[https://toutiao.io/search?utf8=✓&q=orroz](https://toutiao.io/search?utf8=✓&q=orroz)  
 4.Bash最佳实践\[[http://bash.cumulonim.biz/BashPitfalls.html](http://bash.cumulonim.biz/BashPitfalls.html)\]
 
+# 感谢
+本书介绍内容均使用腾讯云的云主机特此感谢。
+# ![](/assets/tencent.jpeg)
