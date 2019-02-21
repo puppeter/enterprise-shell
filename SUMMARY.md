@@ -74,4 +74,3 @@
     * [10.2.7 Bash版回收站](chapter10.2/CHAPTER1.md)
   * 10.3.Bash中文速查表
     * [10.3.1 中文速查表](chapter10.3/CHAPTER1.md)
-
