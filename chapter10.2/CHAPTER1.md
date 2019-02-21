@@ -133,18 +133,17 @@ done
 }
 function help
 {
-echo "
--i)  If you wants delete some file , this function is confirm you want,the same as old rm.
--f)  If you wants delete some directory ,you can use this function ,the same as old rm.
--r)  If you wants delete some directory of file ,this function can use , the same as old rm.
--l)  This is new function,is you wants resume some file or directory you can use this function,
-     first this function can list some file in you garbage , these have some number ,if you 
-     wants resume 1,you can input 1 and then input y to confirm.
-If you want add some function or some new idear please contact me...
-     author:wds
-      email:7717060@sina.com
-      
-"
+    echo "
+    -i)  If you wants delete some file , this function is confirm you want,the same as old rm.
+    -f)  If you wants delete some directory ,you can use this function ,the same as old rm.
+    -r)  If you wants delete some directory of file ,this function can use , the same as old rm.
+    -l)  This is new function,is you wants resume some file or directory you can use this function,
+         first this function can list some file in you garbage , these have some number ,if you 
+         wants resume 1,you can input 1 and then input y to confirm.
+    If you want add some function or some new idear please contact me...
+         author:wds
+          email:8851970@qq.com
+    "
 }
 
 case "$1"
@@ -188,11 +187,11 @@ then
     esac
 fi 
 
-  if [ "$#" -gt 2 ]
-         then
-           for file in $*
-             do
-               mv $file "$home/"
-           done 2> /dev/null
-        fi
+if [ "$#" -gt 2 ]
+then
+   for file in $*
+     do
+       mv $file "$home/"
+   done 2> /dev/null
+fi
 ```
