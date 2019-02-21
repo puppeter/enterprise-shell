@@ -10,6 +10,10 @@
 
 2018.11.3 by 研究僧 \* 深圳南山科技园。
 
+# 学前资源
+之前笔者在录制了Linux相关课程可以作为学习Shell的前置资源，视频相关地址见：https://edu.csdn.net/course/detail/8123
+
+
 # 书的目录
 
 # ![](/assets/Shell 企业级应用20181216.png)
