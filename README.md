@@ -13,6 +13,7 @@
 # 学前资源
 之前笔者在录制了Linux相关课程可以作为学习Shell的前置资源，视频相关地址见：https://edu.csdn.net/course/detail/8123
 
+# ![](/assets/enterprise_linux.png)
 
 # 书的目录
 
