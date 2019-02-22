@@ -1,5 +1,4 @@
- #sed 
-
+#sed 
 sed被称为流编辑器，它是一种新型的非交互式的文本编辑器，它逐行处理文件或输入，并将结果输出到屏幕上。Sed编辑没有破坏性，它默认不会修改文件，除非使用选项主动修改。如果需要进行多项编辑任务，也可以把命令写在一个叫sed脚本的文件里。
 ## sed 语法
 ```
@@ -67,3 +66,17 @@ bin:x:1:1:bin:/bin:/sbin/nologin
 daemon:x:2:2:daemon:/sbin:/sbin/nologin
 ...
 ```
+
+5.删除3到最后一行
+```
+[root@blog.puppeter.com_centos ~]# cat test  | sed '3,$d'
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+```
+
+6. 
+
+
+
+
+
