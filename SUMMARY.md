@@ -71,6 +71,7 @@
     * [10.1.4 /bin/bash和/bin/sh区别](chapter10.1/CHAPTER4.md)
     * [10.1.5  命令杂项](chapter10.1/CHAPTER5.md)
   * 10.2.案例
-    * [10.2.7 Bash版回收站](chapter10.2/CHAPTER1.md)
+    * [10.2.1 Bash版回收站](chapter10.2/CHAPTER1.md)
   * 10.3.Bash中文速查表
     * [10.3.1 中文速查表](chapter10.3/CHAPTER1.md)
+
