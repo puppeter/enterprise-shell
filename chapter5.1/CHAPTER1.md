@@ -6,7 +6,23 @@
 * \|，管道
 * \(\)，操作符
 * 外部命令
-  > 需要注意的是，在写Bash脚本过程中推荐_\*\*_使用Bash内建\(builtin\)命令，因为外部命令会forks一个子进程效率并不是很高。
+
+需要注意的是，在写Bash脚本过程中推荐_\*\*_使用Bash内建\(builtin\)命令，因为外部命令会forks一个子进程效率并不是很高,我们来看以下测试案例：
+```
+[root@blog.puppeter.com_centos ~]# time for i in `seq 1 1000`;do result=$(expr length $test);done
+
+real	0m0.764s
+user	0m0.437s
+sys	0m0.323s
+
+[root@blog.puppeter.com_centos ~]# time for i in `seq 1 1000`;do result={#test}  ;done
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+
+```
+案例主要是测试test字符串的长度。第一个案例调用了外部命令，第二个命令是调用内部命令可以看到最终的执行结果性能的差别还是很大的，所以推荐在编写脚本过程中尽量使用内部命令。
 
 ### 子Shell案例
 
