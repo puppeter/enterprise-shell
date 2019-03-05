@@ -70,6 +70,7 @@
     * [10.1.3 IO重定向](chapter10.1/CHAPTER3.md)
     * [10.1.4 /bin/bash和/bin/sh区别](chapter10.1/CHAPTER4.md)
     * [10.1.5  命令杂项](chapter10.1/CHAPTER5.md)
+    * [10.1.6  Shell加密](chapter10.1/CHAPTER6.md)
   * 10.2.案例
     * [10.2.1 Bash版回收站](chapter10.2/CHAPTER1.md)
   * 10.3.Bash中文速查表
