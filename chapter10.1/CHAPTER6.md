@@ -10,7 +10,7 @@ echo "hello world"
 通过gzexe命令来加密hello.sh脚本。
 ```
 [root@blog.puppeter.com_centos ~]# chmod 766 hello.sh
-[root@blog.puppeter.com_centos ~]# gzexe hello.sh
+[root@blog.puppeter.com_centos ~]# gzexe hello.s
 hello.sh:		  -39.7%
 ```
 这是目录下会产生两个文件hello.sh加密后的和hello.sh~加密前的。我们查看加密后的hello.sh文件内容。
