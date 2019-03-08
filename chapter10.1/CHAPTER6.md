@@ -11,5 +11,34 @@ echo "hello world"
 ```
 [root@blog.puppeter.com_centos ~]# chmod 766 hello.sh
 [root@blog.puppeter.com_centos ~]# gzexe hello.sh
+hello.sh:		  -39.7%
 ```
-这是目录下会生产两个文件hello.sh加密后的和hello.sh~加密前的文件。再次执行以下结果确认是否要输出的内容。
+这是目录下会产生两个文件hello.sh加密后的和hello.sh~加密前的。我们查看加密后的hello.sh文件内容。
+```
+[root@blog.puppeter.com_centos ~]# cat hello.sh
+#!/bin/sh -
+# compressed by gzexe
+lines=19
+prog=`/usr/bin/basename "$0"`
+tmp=`/usr/bin/mktemp -d /tmp/gzexeXXXXXXXXXX` || {
+/bin/echo "$prog: cannot create tmp dir"; exit 1
+}
+trap '/bin/rm -rf "$tmp"' 0
+if /usr/bin/tail +$lines "$0" |
+    /usr/bin/gzip -dc > "$tmp/$prog" 2> /dev/null; then
+/bin/chmod u+x "$tmp/$prog"
+"$tmp/$prog" ${1+"$@"}
+ret=$?
+else
+/bin/echo "$prog: cannot decompress $0"
+ret=1
+fi
+exit $ret
+*)?\1.shSV?O???OJ,?P?RVH??I?K?M?R?H????+??JM??WPs??rR???\o5
+```
+查看加密后hello.sh文件的执行结果。
+```
+[root@blog.puppeter.com_centos ~]#./hello.sh
+hello world
+```
+
